@@ -1,0 +1,57 @@
+/*breakpoints*/
+$breakpoint-xs:480px;
+$breakpoint-sm:640px;
+$breakpoint-md:768px;
+$breakpoint-lg:992px;
+$breakpoint-xl:1300px;
+
+/*colours*/
+$black_dusty: #303030;
+$black_jet: #363537;
+$grey_concrete: #808080;
+$grey_light_1: #F3F3F3;
+$grey_light_2: #E7E7E7;
+$grey_med: #C7C7C7;
+$grey_slate: #444;
+$grey_stone: #A3A49E;
+$white: #FFF;
+$white_off: #F7F8F6;
+$cyan_light: #C6EFEF;
+$voilet_blue: #6F73D2;
+$voilet_dark: #4549c4;
+$pink_candy: #FBCAEF;
+$pink_dark: #f68ddc;
+$terra_cotta: #ED6A5A;
+$yellow_nicc: #fccd6b;
+
+
+/*borders*/
+$border-light: 1px $grey_light_2 solid;
+$border-medium: 1px $grey_concrete solid;
+$border-bold: 1px $grey_slate solid;
+$border-heavy: 2px $grey_slate solid;
+
+/*shadow*/
+$box-shadow-one: 0 2px 4px $grey_med;
+$box-shadow-two: 0 3px 6px $grey_med;
+$box-shadow-three: 0 6px 12px $grey_med;
+$box-shadow-four: 0 9px 18px $grey_med;
+
+/*radius*/
+$radius_sm: 4px;
+$radius_md: 8px;
+$radius_lg: 16px;
+$radius_full: 50%;
+
+/*spacing variables*/
+$spacing_one: 4px;
+$spacing_two: 8px;
+$spacing_three: 12px;
+$spacing_four: 16px;
+$spacing_five: 24px;
+$spacing_six: 32px;
+$spacing_seven: 48px;
+$spacing_eight: 64px;
+$spacing_nine: 96px;
+$spacing_ten: 128px;
+//defined further in spacing.scss

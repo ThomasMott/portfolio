@@ -1,0 +1,87 @@
+/*breakpoints*/
+/*colours*/
+/*borders*/
+/*shadow*/
+/*radius*/
+/*spacing variables*/
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+/* nav */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6F73D2;
+  padding: 16px;
+  height: 64px;
+  width: 100%;
+  position: absolute;
+  z-index: 8; }
+  .nav li a {
+    font-family: 'Nanum Pen Script', cursive;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px; }
+  .nav li a:hover {
+    color: #fccd6b;
+    text-decoration: none; }
+  .nav #current {
+    color: #fccd6b;
+    text-decoration: none;
+    cursor: inherit; }
+  .nav .logo {
+    cursor: pointer;
+    width: 64px;
+    padding: 16px;
+    filter: contrast(0) brightness(100); }
+    .nav .logo:hover {
+      filter: none;
+      padding: 0; }
+  .nav .social {
+    display: none; }
+    @media (min-width: 640px) {
+      .nav .social {
+        display: block; } }
+  .nav .soc-svg {
+    filter: contrast(0) brightness(100);
+    cursor: pointer;
+    width: 16px;
+    margin: 8px; }
+  .nav .soc-svg:hover {
+    filter: none;
+    width: 32px;
+    margin: 0; }
+  .nav .nav-links {
+    list-style: none; }
+  .nav .nav-links li {
+    display: inline;
+    padding: 0 8px; }
+  .nav bottom p {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 32px 0; }
+  .nav a {
+    color: #3366BB;
+    text-decoration: none; }
+  .nav a:hover {
+    color: #7F00FF;
+    text-decoration: underline; }
+
+.nav-lower {
+  background-image: url(../images/dropdown.png);
+  height: 8px;
+  width: 100%;
+  background-color: transparent;
+  background-repeat: repeat-x;
+  background-size: 80px 8px;
+  background-position: center center;
+  position: absolute;
+  top: 64px;
+  z-index: 8; }
+
+@media (min-width: 600px) {
+  .nav {
+    padding: 16px 40px; } }
+
+@media (min-width: 880px) {
+  .nav {
+    padding: 16px 48px; } }

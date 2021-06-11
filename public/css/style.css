@@ -1,0 +1,43 @@
+/*breakpoints*/
+/*colours*/
+/*borders*/
+/*shadow*/
+/*radius*/
+/*spacing variables*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+/* generic stuff */
+* {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  height: 100vh;
+  background-color: #C6EFEF; }
+  body .main {
+    height: 100%; }
+    body .main h1 {
+      font-size: 24px;
+      line-height: 30px;
+      padding-top: 4px;
+      letter-spacing: 0.6px;
+      color: #444444; }
+    body .main h2 {
+      font-size: 18px;
+      line-height: 26px;
+      padding-top: 4px;
+      color: #444444;
+      letter-spacing: 0.4px; }
+    body .main h3 {
+      font-size: 16px;
+      line-height: 24px;
+      padding-top: 4px;
+      color: #444444;
+      letter-spacing: 0.3px; }
+    body .main p {
+      font-size: 14px;
+      line-height: 22px;
+      color: #4B646A;
+      letter-spacing: 0.2px; }

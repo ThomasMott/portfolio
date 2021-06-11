@@ -1,0 +1,82 @@
+/*breakpoints*/
+/*colours*/
+/*borders*/
+/*shadow*/
+/*radius*/
+/*spacing variables*/
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+body {
+  background-color: #F7F8F6; }
+  body .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    body .main h1 {
+      margin-top: 100px;
+      color: #444;
+      font-family: 'Permanent Marker', sans-serif !important; }
+    body .main .grid-container {
+      position: absolute;
+      width: 100%;
+      top: 140px;
+      display: grid;
+      grid-template-areas: 'pr1' 'pr2' 'pr3';
+      grid-gap: 16px;
+      padding: 24px; }
+      body .main .grid-container .pr1 {
+        grid-area: pr1; }
+      body .main .grid-container .pr2 {
+        grid-area: pr2; }
+      body .main .grid-container .pr3 {
+        grid-area: pr3; }
+      body .main .grid-container img {
+        width: 100%; }
+      @media (min-width: 768px) {
+        body .main .grid-container {
+          grid-template-areas: 'pr1 pr2 pr3'; } }
+      @media (min-width: 1300px) {
+        body .main .grid-container {
+          width: 1260px;
+          padding: 48px; } }
+    body .main .grid-container div h2 {
+      font-family: 'Permanent Marker', sans-serif !important;
+      text-align: center;
+      color: #444;
+      margin: 16px 0;
+      padding: 8px;
+      height: 40px; }
+    body .main .grid-container div {
+      opacity: .8; }
+    body .main .grid-container div:hover {
+      opacity: 1; }
+
+.cover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.3);
+  z-index: 32;
+  justify-content: center;
+  align-items: center; }
+  .cover .p1, .cover .p2, .cover .p3 {
+    display: none; }
+    .cover .p1 .modal, .cover .p2 .modal, .cover .p3 .modal {
+      background-color: white;
+      padding: 40px;
+      border-radius: 16px; }
+      .cover .p1 .modal .modal-con, .cover .p2 .modal .modal-con, .cover .p3 .modal .modal-con {
+        max-height: 800px;
+        overflow-y: scroll; }
+
+.portfolio-me {
+  display: none;
+  position: absolute;
+  height: 30%;
+  bottom: 0;
+  right: 20%; }
+  @media (min-width: 768px) {
+    .portfolio-me {
+      display: block; } }

@@ -1,0 +1,141 @@
+@import './variables.scss';
+
+.main {
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+	.img {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width:100%;
+
+		.main-img {
+			margin-top: 40px;
+			width: 100%;
+			z-index: 2;
+
+			@media (min-width: $breakpoint-md) {
+				margin: 16px;
+				width: 40%;
+				z-index: 0;
+			}
+		}
+
+		@media (min-width: $breakpoint-md) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width:100%;
+			height: 100%;
+		}
+	}
+
+	.des {
+		position: absolute;
+		width: 100%;
+		z-index: 2;
+		top: 64px;
+		left: 0;
+		background-color: $white;
+		padding: 32px 24px 16px 24px;
+		border-radius: 0 0 32px 32px;
+
+		h1 {
+			padding: 0 0 12px 0;
+		}
+
+		h1, p {
+			color: $voilet_dark;
+
+			em {
+				color: $pink_dark;
+			}
+		}
+
+		@media (min-width: $breakpoint-md) {
+			position: absolute;
+			z-index: 2;
+			top: 120px;
+			left: 5%;
+			background-color: $white;
+			padding: 24px 32px;
+			border-radius: 32px;
+			width: auto;
+		}
+	}
+
+	.dev {
+		position: absolute;
+		width: 100%;
+		text-align: right;
+		z-index: 2;
+		bottom: 0;
+		right: 0;
+		background-color: $black_jet;
+		padding: 16px 24px;
+		border-radius: 16px 16px 0 0;
+
+		h1 {
+			padding: 0 0 12px 0;
+		}
+
+		h1, p {
+			color: $cyan_light;
+
+			small {
+				color: $yellow_nicc;
+			}
+
+			em {
+				color: $pink_candy;
+			}
+		}
+
+		@media (min-width: $breakpoint-md) {
+			position: absolute;
+			text-align: right;
+			width: auto;
+			z-index: 2;
+			bottom: 80px;
+			right: 5%;
+			background-color: $black_jet;
+			padding: 24px 32px;
+			border-radius: 32px;
+		}
+	}
+}
+
+.background {
+	z-index: 1;
+
+	.background-inner {
+		position: absolute;
+		padding: 0;
+
+		@media (min-width: $breakpoint-sm) {
+			padding: 32px;
+		}
+	}
+
+	.background-magic {
+		background-color: $white;
+	}
+
+	.circle-s {
+		border-radius: 50%;
+		z-index: -1;
+		height: 8px;
+		width: 8px;
+	}
+
+	.circle-m {
+		border-radius: 50%;
+		z-index: -1;
+		height: 16px;
+		width: 16px;
+	}
+}
+

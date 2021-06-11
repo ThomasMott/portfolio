@@ -1,0 +1,106 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+body {
+	background-color: $white_off;
+
+	.main {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		h1, h2, h3, p {
+			font-family: 'Nanum Pen Script', cursive;
+			color: $voilet_blue;
+		}
+
+		.pr1 {
+			grid-area: pr1;
+		}
+
+		.grid-container {
+			margin-top: 100px;
+			max-width: 100%;
+			display: grid;
+			grid-template-areas:
+				'pr1'
+				'pr2';
+			grid-gap: 16px;
+			padding: 24px;
+
+			.code {
+				display: flex;
+				justify-content: center;
+
+				h3{
+					padding: 20px;
+					font-size: 40px;
+					text-align: center;
+				}
+			}
+
+			.edu {
+				display: flex;
+				justify-content: center;
+
+				h3{
+					padding: 20px;
+					font-size: 24px;
+					text-align: center;
+				}
+			}
+
+			.btn {
+				background-color: $pink_dark;
+				border-radius: 32px;
+				text-align: center;
+				padding: 16px 32px;
+				color: $white;
+				cursor: pointer;
+			}
+		}
+	}
+
+	/* header */
+	.header {
+		color: #3366BB;
+	}
+
+	/* svgs */
+	.soc-svg1 {
+		filter: contrast(0);
+		cursor: pointer;
+		width: 28px;
+		margin: 4px;
+	}
+
+	.soc-svg1:hover {
+		filter: none;
+		width: 32px;
+	}
+
+	.profile {
+		width: 120px;
+		height: 120px;
+		border-radius: 50%;
+		margin: 16px;
+	}
+
+	@media (min-width: 600px) {
+		.soc-svg1 {
+			margin: 8px;
+		}
+	}
+}
+
+.portfolio-about {
+	display: none;
+	position: absolute;
+	height: 30%;
+	bottom: -20px;
+	right: 25%;
+
+	@media (min-width: $breakpoint-md) {
+		display: block;
+	}
+}

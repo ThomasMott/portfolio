@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <link rel="icon" href="../images/logo.svg">
+</head>
+<body>
+	<section class="nav">
+        <a href="./index.html"><img class="logo" src="../images/logo.svg" alt="logo"></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a id="current" href="#">portfolio</a></li>
+                <li><a href="./about.html">about</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <a href="https://www.instagram.com/xtmto/"><img class="soc-svg" src="../images/instagram.svg"></a>
+            <a href="https://www.linkedin.com/in/thomas-mott-57348b150/"><img class="soc-svg" src="../images/linked-in.svg"></a>
+            <a href="https://github.com/ThomasMott"><img class="soc-svg" src="../images/github.svg"></a>
+        </div>
+    </section>
+	<div class="nav-lower"></div>
+    <section class="main">
+		<h1>Projects</h1>
+        <container class="grid-container">
+            <div class="pr pr1" onclick="openModal(1)">
+				<img src="../images/test.jpg">
+				<h2>project 1</h2>
+			</div>
+            <div class="pr pr2" onclick="openModal(2)">
+				<img src="../images/test.jpg">
+				<h2>project 1</h2>
+			</div>
+            <div class="pr pr3" onclick="openModal(3)">
+				<img src="../images/test.jpg">
+				<h2>project 1</h2>
+			</div>
+        </container>
+    </section>
+	<div class="cover" id="cover-js" onclick="toggleVis()">
+		<div class="p1" id="p1-js">
+			<div class="modal">
+				<div class="modal-con">
+					<img src="../images/test.jpg">
+					<h1>Project title</h1>
+					<h2>Secondary title</h2>
+					<p>Boring explanation</p>
+					<img src="../images/test.jpg">
+					<h2>Secondary title</h2>
+					<p>Boring explanation</p>
+				</div>
+			</div>
+		</div>
+		<div class="p2" id="p2-js"><p>project 2</p></div>
+		<div class="p3" id="p3-js"><p>project 3</p></div>
+	</div>
+	<img class="portfolio-me" src="../images/portfolio.svg">
+</body>
+<script src='../js/portfolio.js'></script>
+</html>
