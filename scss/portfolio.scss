@@ -23,7 +23,8 @@ body {
 			grid-template-areas:
 				'pr1'
 				'pr2'
-				'pr3';
+				'pr3'
+				'pr4';
 			grid-gap: 16px;
 			padding: 24px;
 
@@ -39,13 +40,42 @@ body {
 				grid-area: pr3;
 			}
 
+			.pr4 {
+				grid-area: pr4;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+			.btn-container {
+				display: flex;
+				justify-content: center;
+
+				.btn {
+					background-color: $pink_dark;
+					border-radius: 32px;
+					text-align: center;
+					padding: 16px 32px;
+					color: $white;
+					cursor: pointer;
+					max-width: 400px;
+					text-decoration: none;
+					margin: 16px;
+				}
+			}
+
+			.btn:hover {
+				background-color: $voilet_blue;
+			}
+
 			img {
 				width: 100%;
 			}
 
 			@media (min-width: $breakpoint-md) {
 				grid-template-areas:
-				'pr1 pr2 pr3';
+				'pr1 pr2 pr3'
+				'pr4 pr4 pr4';
 			}
 
 			@media (min-width: $breakpoint-xl) {
@@ -80,24 +110,17 @@ body {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background-color: rgba(255, 0, 0, 0.3);;
+	background-color: $black_jet;
 	z-index: 32;
-	justify-content: center;
-	align-items: center;
 
 	.p1, .p2, .p3 {
 		display: none;
 
-		.modal {
-			background-color: white;
-			padding: 40px;
-			border-radius: 16px;
-
-			.modal-con {
-				max-height: 800px;
-				overflow-y: scroll;
+			.doot {
+				width: 100%;
+				object-fit: cover;
 			}
-		}
+
 	}
 }
 

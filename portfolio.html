@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/portfolio.css">
-    <link rel="icon" href="./images/logo.svg">
+    <link rel="icon" href="./static/images/logo.svg">
 </head>
 <body>
 	<section class="nav">
-        <a href="./index.html"><img class="logo" src="./images/logo.svg" alt="logo"></a>
+        <a href="./index.html"><img class="logo" src="../static/images/logo.svg" alt="logo"></a>
         <nav>
             <ul class="nav-links">
                 <li><a id="current" href="#">portfolio</a></li>
@@ -19,9 +19,9 @@
             </ul>
         </nav>
         <div class="social">
-            <a href="https://www.instagram.com/xtmto/"><img class="soc-svg" src="./images/instagram.svg"></a>
-            <a href="https://www.linkedin.com/in/thomas-mott-57348b150/"><img class="soc-svg" src="./images/linked-in.svg"></a>
-            <a href="https://github.com/ThomasMott"><img class="soc-svg" src="./images/github.svg"></a>
+            <a href="https://www.instagram.com/xtmto/"><img class="soc-svg" src="./static/images/instagram.svg"></a>
+            <a href="https://www.linkedin.com/in/thomas-mott-57348b150/"><img class="soc-svg" src="./static/images/linked-in.svg"></a>
+            <a href="https://github.com/ThomasMott"><img class="soc-svg" src="./static/images/github.svg"></a>
         </div>
     </section>
 	<div class="nav-lower"></div>
@@ -29,37 +29,35 @@
 		<h1>Projects</h1>
         <container class="grid-container">
             <div class="pr pr1" onclick="openModal(1)">
-				<img src="./images/test.jpg">
-				<h2>project 1</h2>
+				<img src="./static/images/rl.jpg">
+				<h2>Ralph Lauren Redesign</h2>
 			</div>
             <div class="pr pr2" onclick="openModal(2)">
-				<img src="./images/test.jpg">
-				<h2>project 1</h2>
+				<img src="./static/images/recol.jpg">
+				<h2>Recol Learning app</h2>
 			</div>
             <div class="pr pr3" onclick="openModal(3)">
-				<img src="./images/test.jpg">
-				<h2>project 1</h2>
+				<img src="./static/images/petlet.jpg">
+				<h2>Petlet</h2>
+			</div>
+			<div class="pr4 btn-container">
+				<a class="btn" href="./static/Thomas-Mott-UX-portfolio.pdf" download="portfolio">Download full portfolio</a>
+				<a class="btn" href="https://github.com/ThomasMott">Checkout my github</a>
 			</div>
         </container>
     </section>
 	<div class="cover" id="cover-js" onclick="toggleVis()">
-		<div class="p1" id="p1-js">
-			<div class="modal">
-				<div class="modal-con">
-					<img src="./images/test.jpg">
-					<h1>Project title</h1>
-					<h2>Secondary title</h2>
-					<p>Boring explanation</p>
-					<img src="./images/test.jpg">
-					<h2>Secondary title</h2>
-					<p>Boring explanation</p>
-				</div>
-			</div>
+		<div class="p1 modal" id="p1-js">
+			<img class="doot" src="./static/images/rl.jpg">
 		</div>
-		<div class="p2" id="p2-js"><p>project 2</p></div>
-		<div class="p3" id="p3-js"><p>project 3</p></div>
+		<div class="p2" id="p2-js">
+			<img class="doot" src="./static/images/recol.jpg">
+		</div>
+		<div class="p3" id="p3-js">
+			<img class="doot" src="./static/images/petlet.jpg">
+		</div>
 	</div>
-	<img class="portfolio-me" src="./images/portfolio.svg">
+	<img class="portfolio-me" src="./static/images/portfolio.svg">
 </body>
 <script src='./js/portfolio.js'></script>
 </html>

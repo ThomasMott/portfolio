@@ -67,7 +67,7 @@
     text-decoration: underline; }
 
 .nav-lower {
-  background-image: url(../images/dropdown.png);
+  background-image: url(../static/images/dropdown.png);
   height: 8px;
   width: 100%;
   background-color: transparent;

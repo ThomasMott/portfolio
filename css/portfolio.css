@@ -20,7 +20,7 @@ body {
       width: 100%;
       top: 140px;
       display: grid;
-      grid-template-areas: 'pr1' 'pr2' 'pr3';
+      grid-template-areas: 'pr1' 'pr2' 'pr3' 'pr4';
       grid-gap: 16px;
       padding: 24px; }
       body .main .grid-container .pr1 {
@@ -29,11 +29,31 @@ body {
         grid-area: pr2; }
       body .main .grid-container .pr3 {
         grid-area: pr3; }
+      body .main .grid-container .pr4 {
+        grid-area: pr4;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+      body .main .grid-container .btn-container {
+        display: flex;
+        justify-content: center; }
+        body .main .grid-container .btn-container .btn {
+          background-color: #f68ddc;
+          border-radius: 32px;
+          text-align: center;
+          padding: 16px 32px;
+          color: #FFF;
+          cursor: pointer;
+          max-width: 400px;
+          text-decoration: none;
+          margin: 16px; }
+      body .main .grid-container .btn:hover {
+        background-color: #6F73D2; }
       body .main .grid-container img {
         width: 100%; }
       @media (min-width: 768px) {
         body .main .grid-container {
-          grid-template-areas: 'pr1 pr2 pr3'; } }
+          grid-template-areas: 'pr1 pr2 pr3' 'pr4 pr4 pr4'; } }
       @media (min-width: 1300px) {
         body .main .grid-container {
           width: 1260px;
@@ -57,19 +77,13 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 0, 0, 0.3);
-  z-index: 32;
-  justify-content: center;
-  align-items: center; }
+  background-color: #363537;
+  z-index: 32; }
   .cover .p1, .cover .p2, .cover .p3 {
     display: none; }
-    .cover .p1 .modal, .cover .p2 .modal, .cover .p3 .modal {
-      background-color: white;
-      padding: 40px;
-      border-radius: 16px; }
-      .cover .p1 .modal .modal-con, .cover .p2 .modal .modal-con, .cover .p3 .modal .modal-con {
-        max-height: 800px;
-        overflow-y: scroll; }
+    .cover .p1 .doot, .cover .p2 .doot, .cover .p3 .doot {
+      width: 100%;
+      object-fit: cover; }
 
 .portfolio-me {
   display: none;
