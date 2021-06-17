@@ -13,15 +13,11 @@
 		width:100%;
 
 		.main-img {
-			margin-top: 40px;
 			width: 100%;
 			z-index: 2;
-
-			@media (min-width: $breakpoint-md) {
-				margin: 16px;
-				width: 40%;
-				z-index: 0;
-			}
+			position: absolute;
+			bottom: 0;
+			display: none;
 		}
 
 		@media (min-width: $breakpoint-md) {
@@ -33,77 +29,37 @@
 		}
 	}
 
-	.des {
+	.main-title {
 		position: absolute;
-		width: 100%;
-		z-index: 2;
-		top: 64px;
-		left: 0;
-		background-color: $white;
-		padding: 32px 24px 16px 24px;
-		border-radius: 0 0 32px 32px;
+		top: 20%;
+		z-index: 20;
 
 		h1 {
-			padding: 0 0 12px 0;
-		}
+			font-size: 64px;
+			padding-bottom: 16px;
+			line-height: 72px;
+			color: $white;
+			padding: 8px;
 
-		h1, p {
-			color: $voilet_dark;
-
-			em {
-				color: $pink_dark;
-			}
-		}
-
-		@media (min-width: $breakpoint-md) {
-			position: absolute;
-			z-index: 2;
-			top: 120px;
-			left: 5%;
-			background-color: $white;
-			padding: 24px 32px;
-			border-radius: 32px;
-			width: auto;
-		}
-	}
-
-	.dev {
-		position: absolute;
-		width: 100%;
-		text-align: right;
-		z-index: 2;
-		bottom: 0;
-		right: 0;
-		background-color: $black_jet;
-		padding: 16px 24px;
-		border-radius: 16px 16px 0 0;
-
-		h1 {
-			padding: 0 0 12px 0;
-		}
-
-		h1, p {
-			color: $cyan_light;
-
-			small {
+			span {
 				color: $yellow_nicc;
 			}
+		}
 
-			em {
-				color: $pink_candy;
-			}
+		p {
+			font-size: 24px;
+			line-height: 32px;
+			color: $pink_candy;
+			padding: 16px 8px 8px 8px;
+			max-width: 520px;
 		}
 
 		@media (min-width: $breakpoint-md) {
-			position: absolute;
-			text-align: right;
-			width: auto;
-			z-index: 2;
-			bottom: 80px;
-			right: 5%;
-			background-color: $black_jet;
-			padding: 24px 32px;
-			border-radius: 32px;
+			top: 30%;
+		}
+
+		@media (min-width: $breakpoint-lx) {
+			top: 35%;
 		}
 	}
 }
@@ -116,7 +72,7 @@
 		padding: 0;
 
 		@media (min-width: $breakpoint-sm) {
-			padding: 32px;
+			padding: 24px;
 		}
 	}
 
@@ -125,17 +81,15 @@
 	}
 
 	.circle-s {
+		display: none;
 		border-radius: 50%;
 		z-index: -1;
 		height: 8px;
 		width: 8px;
-	}
 
-	.circle-m {
-		border-radius: 50%;
-		z-index: -1;
-		height: 16px;
-		width: 16px;
+		@media (min-width: $breakpoint-xl) {
+			display: block;
+		}
 	}
 }
 

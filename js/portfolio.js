@@ -1,13 +1,17 @@
-var modal = document.getElementById("cover-js");
-
 function openModal(n) {
-	modal.style.display = "flex";
-	document.getElementById(`p${n}-js`).style.display = "block";
-}
+	var x = document.getElementById(`p${n}-js`);
+	var y= document.getElementById(`p${n}-img-js`);
+	var z = sessionStorage.getItem(n);
 
-function toggleVis() {
-	modal.style.display = "none";
-	document.getElementById("p1-js").style.display = "none";
-	document.getElementById("p2-js").style.display = "none";
-	document.getElementById("p3-js").style.display = "none";
+	if (z == "true") {
+		x.removeAttribute('style');
+		y.removeAttribute('style');
+		sessionStorage.removeItem(n);
+	}
+	if (z == "false" || z === null) {
+		x.style.display = "flex";
+		y.style.opacity = 1;
+		y.style.filter = "none";
+		sessionStorage.setItem(n, true);
+	}
 }

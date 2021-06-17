@@ -1,5 +1,5 @@
 @import './variables.scss';
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 
 body {
 	background-color: $white_off;
@@ -9,27 +9,27 @@ body {
 		flex-wrap: wrap;
 		justify-content: center;
 
-		h1 {
-			margin-top: 100px;
-			color: $grey_slate;
-			font-family: 'Permanent Marker', sans-serif !important;
-		}
-
 		.grid-container {
 			position: absolute;
 			width: 100%;
-			top: 140px;
+			top: 100px;
 			display: grid;
 			grid-template-areas:
 				'pr1'
 				'pr2'
 				'pr3'
-				'pr4';
-			grid-gap: 16px;
+				'pr4'
+				'pr5'
+				'pr6';
+			grid-column: 0px;
+			grid-row-gap: 32px;
 			padding: 24px;
 
 			.pr1 {
 				grid-area: pr1;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
 			}
 
 			.pr2 {
@@ -42,9 +42,61 @@ body {
 
 			.pr4 {
 				grid-area: pr4;
+			}
+
+			.pr5 {
+				grid-area: pr5;
+			}
+
+			.pr6 {
+				grid-area: pr6;
+			}
+
+			.p-img {
 				display: flex;
-				flex-wrap: wrap;
-				justify-content: center;
+			}
+
+			.p-desc {
+				background-color: $black_jet;
+				display: none;
+				border-radius: 0 0 16px 16px;
+
+				.p-left {
+					padding: 0 0 0 16px;
+					width: 100%;
+
+					p {
+						font-size: 13px;
+						padding: 24px 32px 0 0;
+					}
+
+					h1 {
+						padding: 24px 0;
+					}
+				}
+
+				.p-right {
+					padding: 0 40px 64px 0;
+
+					p {
+						padding: 24px 0 0 0;
+					}
+
+					h2 {
+						padding: 12px 0;
+					}
+				}
+
+				h1, h2 {
+					font-family: 'Josefin Sans', sans-serif;
+					color: $grey_light_1;
+					text-align: left;
+				}
+
+				p {
+					font-family: 'Josefin Sans', sans-serif;
+					color: $white;
+				}
 			}
 
 			.btn-container {
@@ -58,7 +110,7 @@ body {
 					padding: 16px 32px;
 					color: $white;
 					cursor: pointer;
-					max-width: 400px;
+					width: 240px;
 					text-decoration: none;
 					margin: 16px;
 				}
@@ -68,14 +120,38 @@ body {
 				background-color: $voilet_blue;
 			}
 
+			.title {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin: 0;
+				font-size: 64px;
+				color: $white;
+			}
+
 			img {
 				width: 100%;
+				height: 240px;
+				object-fit: cover;
+			}
+
+			.sec-img {
+				display: none;
 			}
 
 			@media (min-width: $breakpoint-md) {
 				grid-template-areas:
-				'pr1 pr2 pr3'
-				'pr4 pr4 pr4';
+				'pr1'
+				'pr2'
+				'pr3'
+				'pr4'
+				'pr5'
+				'pr6';
+
+				.sec-img {
+					display: block;
+				}
+
 			}
 
 			@media (min-width: $breakpoint-xl) {
@@ -85,7 +161,6 @@ body {
 		}
 
 		.grid-container div h2 {
-			font-family: 'Permanent Marker', sans-serif !important;
 			text-align: center;
 			color: $grey_slate;
 			margin: 16px 0;
@@ -93,45 +168,49 @@ body {
 			height: 40px;
 		}
 
-		.grid-container div {
-			opacity: .8;
+		.grid-container .p-img {
+			opacity: .3;
+			filter: grayscale(100%);
 		}
 
-		.grid-container div:hover {
+		.grid-container .p-img:hover {
 			opacity: 1;
+			filter: none;
 		}
 	}
 }
 
-.cover {
-	display: none;
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background-color: $black_jet;
-	z-index: 32;
-
-	.p1, .p2, .p3 {
-		display: none;
-
-			.doot {
-				width: 100%;
-				object-fit: cover;
-			}
-
-	}
+.pms {
+	animation: pms 6s ease infinite;
+	position: fixed;
+	right: 120px;
+	bottom: 0;
 }
 
-.portfolio-me {
-	display: none;
-	position: absolute;
-	height: 30%;
-	bottom: 0;
-	right: 20%;
+@keyframes pms {
+	0% { opacity: 1; }
+	40% { opacity: .4; }
+	60% { opacity: .6; }
+	100% { opacity: 1; }
+}
 
-	@media (min-width: $breakpoint-md) {
+.pm {
+	animation: pm 6s ease infinite;
+	position: fixed;
+	height: 24%;
+	right: 112px;
+}
+
+@keyframes pm {
+	0% { bottom: 8px; }
+	50% { bottom: 40px; }
+	100% { bottom: 8px; }
+}
+
+.pm, .pms {
+	display: none;
+
+	@media (min-width: $breakpoint-xl) {
 		display: block;
 	}
 }

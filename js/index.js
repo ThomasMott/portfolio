@@ -3,31 +3,42 @@ window.onload = init;
 function init() {
 	createMagic();
 	for (let j of document.querySelectorAll('.background-inner')) {j.addEventListener("mouseover", colorMagic)};
+	document.getElementById('img').addEventListener("mouseover", doot);
 }
 
 function createMagic() {
-	var randClass = ["circle-s", "circle-m"];
 
-	for (i = 0; i < 32; i++) {
-		const div = document.createElement("div");
-		div.classList.add("background-inner");
-		const innerDiv = document.createElement("div");
+	for (i = 12; i <= 88; i += 2) {
 
-		div.appendChild(innerDiv);
-		innerDiv.classList.add("background-magic");
-		innerDiv.classList.add(randClass[Math.round(Math.random())]);
+		for(j = 12; j <= 88; j += 4) {
 
-		div.style.left = `${Math.floor(Math.random() * 70) + 15}%`;
-		div.style.top = `${Math.floor(Math.random() * 70) + 15}%`;
+			if(( j >= 76 || j <= 24) || ( i >= 68 || i <= 28)) {
+				const div = document.createElement("div");
+				div.classList.add("background-inner");
+				const innerDiv = document.createElement("div");
 
-		document.getElementById("background").appendChild(div);
+				div.appendChild(innerDiv);
+				innerDiv.classList.add("background-magic");
+				innerDiv.classList.add("circle-s");
+
+				div.style.left = `${i}%`;
+				div.style.top = `${j}%`;
+
+				document.getElementById("background").appendChild(div);
+			}
+
+		}
 	}
 }
 
 function colorMagic() {
 	var magic = this.childNodes[0];
 	var color = '#'+Math.floor(Math.random()*16777215).toString(16);
+	// var color = '#fccd6b';
 
 	magic.style.backgroundColor = color;
 };
 
+function doot() {
+	console.log("doot");
+}

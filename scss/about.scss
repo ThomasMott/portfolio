@@ -1,5 +1,5 @@
 @import './variables.scss';
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 
 body {
 	background-color: $white_off;
@@ -9,9 +9,14 @@ body {
 		flex-wrap: wrap;
 		justify-content: center;
 
-		h1, h2, h3, p {
-			font-family: 'Nanum Pen Script', cursive;
+		h1, h2, h3 {
 			color: $voilet_blue;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+
+		p {
+			font-family: 'Josefin Sans', sans-serif;
+			font-size: 13px;
 		}
 
 		.grid-container {
@@ -86,7 +91,6 @@ body {
 
 			p {
 				color: $black_jet;
-				font-size: 18px;
 			}
 		}
 	}
