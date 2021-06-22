@@ -9,14 +9,23 @@ body {
 		flex-wrap: wrap;
 		justify-content: center;
 
-		h1, h2, h3 {
-			color: $voilet_blue;
+		h1, h2, h3, li {
+			color: $black_jet;
 			font-family: 'Josefin Sans', sans-serif;
 		}
 
 		p {
 			font-family: 'Josefin Sans', sans-serif;
 			font-size: 13px;
+		}
+
+		ul {
+			list-style: none;
+			padding: 8px 0;
+
+			li {
+				padding: 4px 0;;
+			}
 		}
 
 		.grid-container {
@@ -29,21 +38,14 @@ body {
 			grid-gap: 16px;
 			padding: 24px;
 
-			.code, .des {
-				display: flex;
-				justify-content: center;
-				max-width: 100%;
-				flex-wrap: wrap;
+			h3{
+				padding: 20px;
+				font-size: 24px;
+				text-align: center;
+			}
 
-				h3{
-					padding: 20px;
-					font-size: 40px;
-					text-align: center;
-				}
-
-				h3:hover {
-					color: $pink_dark;
-				}
+			h3:hover {
+				color: $pink_dark;
 			}
 
 			.edu {
@@ -64,6 +66,7 @@ body {
 			.btn-container {
 				display: flex;
 				justify-content: center;
+				width: 240px;
 
 				.btn {
 					background-color: $pink_dark;
@@ -79,6 +82,10 @@ body {
 
 			.btn:hover {
 				background-color: $voilet_blue;
+			}
+
+			.hlght {
+				color: $voilet_blue;
 			}
 
 			h1, h2 {

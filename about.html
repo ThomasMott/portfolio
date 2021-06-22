@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/nav.css">
 	<link rel="stylesheet" href="./css/about.css">
-    <link rel="icon" href="./static/images/logo.svg">
+    <link rel="icon" href="./static/images/eye-full.svg">
     <title>about</title>
 </head>
 <body>
@@ -14,13 +14,16 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="./portfolio.html">portfolio</a></li>
-                <li><a href="./about.html">about</a></li>
+                <li><a id="current" href="./about.html">about</a></li>
 				<li><a href="mailto:ThomasNMott1997@gmail.com">contact</a></li>
             </ul>
         </nav>
 		<a href="./index.html">
-			<div class="eye">
-				<div class="ball" id="ball"></div>
+			<div class="eye-all">
+				<img class="eyelash" src="./static/images/eye.svg">
+				<div class="eye">
+					<div class="ball" id="ball"></div>
+				</div>
 			</div>
 		</a>
         <div class="social">
@@ -33,43 +36,100 @@
     <section class="main">
         <container class="grid-container">
 			<div class="pr1">
-                <h1 class="header">Hi There!</h1>
-				<br>
-				<p>My name is Tom and I am a :</p>
-				<br>
-				<h1>front end developer & UX / UI designer</h1>
-				<br>
-				<p>I deliver human centred designs and experiences.<br>
-				and make sure interfaces are accessible and intuitive.</p>
-				<br>
-				<h2>I code in ~</h2>
-				<div class="code">
-					<h3>&lt;HTML&gt;</h3>
-					<h3>CSS:</h3>
-					<h3>JavaScript()</h3>
-					<h3>$PHP</h3>
-				</div>
-				<br>
-				<h2>I design in ~</h2>
-				<div class="des">
-					<h3>Adobe XD</h3>
-					<h3>Sketch</h3>
-				</div>
-				<br>
-				<h2>Studied at ~</h2>
-				<div class="edu">
-					<h3>MA<br>User Experience Design<br>Loughborough</h3>
-					<h3>BSc<br>Product Design<br>Bangor</h3>
-				</div>
-				<br>
-				<h2>Like what you see?</h2>
-				<br>
 				<div class="btn-container">
-					<a class="btn" href="./static/ThomasMott-CV.pdf" download="cv">download full CV</a>
+					<a class="btn" href="./static/ThomasMott-CV.pdf" download="cv">download CV</a>
 				</div>
+				<br>
+				<p>I am a creative UX / UI developer able to deliver human centred designs and experiences, and make sure interfaces are accessible and intuitive.</p>
+				<br>
+				<!-- i have designing for and coding for  -->
+				<h2>Main Skills</h2>
+				<div>
+					<ul>
+						<li>&lt;HTML&gt;</li>
+						<li>CSS:</li>
+						<li>JavaScript()</li>
+						<li>jQuery()</li>
+						<li>$PHP</li>
+					</ul>
+					<ul>
+						<li>Photoshop</li>
+						<li>Illustrator</li>
+						<li>InDesign</li>
+						<li>Adobe XD</li>
+					</ul>
+					<ul>
+						<li>Website accessibilty</li>
+						<li>Graphic Design</li>
+					</ul>
+				</div>
+				<br>
+				<h2>Tools/years</h2>
+				<div>
+					<ul>
+						<li>HTML/~1</li>
+						<li>CSS/~1</li>
+						<li>JavaScript/~1</li>
+						<li>jQuery/~1</li>
+						<li>PHP/~1</li>
+						<li>SVG/2</li>
+					</ul>
+					<ul>
+						<li>React/~1</li>
+						<li>React Native/~1</li>
+						<li>Node.js/~1</li>
+					</ul>
+					<ul>
+						<li>Photoshop/+4</li>
+						<li>Illustrator/+4</li>
+						<li>InDesign/+4</li>
+						<li>Adobe XD/+2</li>
+					</ul>
+				</div>
+				<br>
+				<h2>Education</h2>
+				<div>
+					<ul>
+						<li><span class="hlght">MA User Experience Design</span><br>@ Loughborough<br>Distinction</li>
+						<li><span class="hlght">BSc Product Design</span><br>@ Bangor<br>1st</li>
+					</ul>
+				</div>
+				<br>
+				<h2>Experience</h2>
+				<div>
+					<ul>
+						<li><span class="hlght">Frontend UX / UI developer</span><br>@ Mojeek<br>2020 -current</li>
+						<li><span class="hlght">UX / UI designer</span><br>@ Jonk Design<br>2018 - 2020</li>
+						<li><span class="hlght">Maker Space Manager</span><br>@ M-Sparc<br>2019 - 2019</li>
+					</ul>
+				</div>
+				<br>
+				<h2>Languages</h2>
+				<div>
+					<p>// fluent</p>
+					<ul>
+						<li><span class="hlght">en-US</span> English</li>
+					</ul>
+					<p>// basic</p>
+					<ul>
+						<li><span class="hlght">ge-DE</span> Deutsch</li>
+					</ul>
+				</div>
+				<br>
+				<h2>Hobbies</h2>
+				<div>
+					<ul>
+						<li>Illustration</li>
+						<li>Cryptocurrency</li>
+						<li>Guitar</li>
+						<li>Dog walking</li>
+					</ul>
+				</div>
+				<br>
 			</div>
         </container>
     </section>
 	<script src='./js/eye.js'></script>
+	<script src='./js/date.js'></script>
 </body>
 </html>

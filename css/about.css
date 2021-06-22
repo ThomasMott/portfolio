@@ -13,12 +13,17 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
-    body .main h1, body .main h2, body .main h3 {
-      color: #6F73D2;
+    body .main h1, body .main h2, body .main h3, body .main li {
+      color: #363537;
       font-family: 'Josefin Sans', sans-serif; }
     body .main p {
       font-family: 'Josefin Sans', sans-serif;
       font-size: 13px; }
+    body .main ul {
+      list-style: none;
+      padding: 8px 0; }
+      body .main ul li {
+        padding: 4px 0; }
     body .main .grid-container {
       margin-top: 100px;
       max-width: 1200px;
@@ -26,17 +31,12 @@ body {
       grid-template-areas: 'pr1' 'pr2';
       grid-gap: 16px;
       padding: 24px; }
-      body .main .grid-container .code, body .main .grid-container .des {
-        display: flex;
-        justify-content: center;
-        max-width: 100%;
-        flex-wrap: wrap; }
-        body .main .grid-container .code h3, body .main .grid-container .des h3 {
-          padding: 20px;
-          font-size: 40px;
-          text-align: center; }
-        body .main .grid-container .code h3:hover, body .main .grid-container .des h3:hover {
-          color: #f68ddc; }
+      body .main .grid-container h3 {
+        padding: 20px;
+        font-size: 24px;
+        text-align: center; }
+      body .main .grid-container h3:hover {
+        color: #f68ddc; }
       body .main .grid-container .edu {
         display: flex;
         justify-content: center; }
@@ -48,7 +48,8 @@ body {
           color: #f68ddc; }
       body .main .grid-container .btn-container {
         display: flex;
-        justify-content: center; }
+        justify-content: center;
+        width: 240px; }
         body .main .grid-container .btn-container .btn {
           background-color: #f68ddc;
           border-radius: 32px;
@@ -60,6 +61,8 @@ body {
           text-decoration: none; }
       body .main .grid-container .btn:hover {
         background-color: #6F73D2; }
+      body .main .grid-container .hlght {
+        color: #6F73D2; }
       body .main .grid-container h1, body .main .grid-container h2 {
         color: #f68ddc; }
       body .main .grid-container h1 {

@@ -30,29 +30,45 @@
 		cursor: inherit;
 	}
 
-	.eye {
-		width: 28px;
-		height: 20px;
-		background: $white_off;
-		position: relative;
-		border-radius: 50%;
-		overflow: hidden;
+	.eye-all {
 
-		&:hover {
+		.eyelash {
+			display: none;
+			position: absolute;
+			top: 13px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.eye {
+			width: 28px;
+			height: 20px;
+			background: $white_off;
+			position: relative;
+			border-radius: 50%;
+			overflow: hidden;
+
+			.ball {
+				width: 12px;
+				height: 12px;
+				background: $black_jet;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				border-radius: 50%;
+			}
+		}
+
+		&:hover .eye{
 			background: $yellow_nicc;
 		}
 
-		.ball {
-			width: 12px;
-			height: 12px;
-			background: $black_jet;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			border-radius: 50%;
+		&:hover .eyelash{
+			display: block;
 		}
 	}
+
 
 	.social {
 		display: none;
