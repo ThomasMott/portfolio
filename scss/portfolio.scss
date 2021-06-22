@@ -61,29 +61,49 @@ body {
 				display: none;
 				border-radius: 0 0 16px 16px;
 
-				.p-left {
-					padding: 0 0 0 16px;
-					width: 100%;
+				.p-in {
+					display: block;
 
-					p {
-						font-size: 13px;
-						padding: 24px 32px 0 0;
+					@media (min-width: $breakpoint-md) {
+						display: flex;
 					}
 
-					h1 {
-						padding: 24px 0;
+					.p-left {
+						padding: 0 16px;
+						width: 100%;
+						max-width: 480px;
+
+						p {
+							font-size: 13px;
+							padding: 24px 32px 0 0;
+						}
+
+						h1 {
+							padding: 24px 0;
+						}
+
+						@media (min-width: $breakpoint-md) {
+							padding: 0 0 0 16px;
+							max-width: unset;
+						}
 					}
-				}
 
-				.p-right {
-					padding: 0 40px 64px 0;
+					.p-right {
+						padding: 0 16px 32px 16px;
+						max-width: 720px;
 
-					p {
-						padding: 24px 0 0 0;
-					}
+						p {
+							padding: 24px 0 0 0;
+						}
 
-					h2 {
-						padding: 12px 0;
+						h2 {
+							padding: 12px 0;
+						}
+
+						@media (min-width: $breakpoint-md) {
+							padding: 0 40px 64px 0;
+							max-width: unset;
+						}
 					}
 				}
 

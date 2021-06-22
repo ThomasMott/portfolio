@@ -35,9 +35,9 @@
 		z-index: 20;
 
 		h1 {
-			font-size: 64px;
+			font-size: 48px;
+			line-height: 56px;
 			padding-bottom: 16px;
-			line-height: 72px;
 			color: $white;
 			padding: 8px;
 
@@ -47,19 +47,23 @@
 		}
 
 		p {
-			font-size: 24px;
-			line-height: 32px;
+			font-size: 16px;
+			line-height: 24px;
 			color: $pink_candy;
 			padding: 16px 8px 8px 8px;
 			max-width: 520px;
 		}
 
 		@media (min-width: $breakpoint-md) {
-			top: 30%;
+			top: 35%;
 		}
 
-		@media (min-width: $breakpoint-lx) {
-			top: 35%;
+		@media (min-width: $breakpoint-xl) {
+
+			h1 {
+				font-size: 64px;
+				line-height: 72px;
+			}
 		}
 	}
 }
@@ -87,7 +91,7 @@
 		height: 8px;
 		width: 8px;
 
-		@media (min-width: $breakpoint-xl) {
+		@media (min-width: $breakpoint-lg) {
 			display: block;
 		}
 	}

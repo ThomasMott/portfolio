@@ -41,20 +41,35 @@ body {
         background-color: #363537;
         display: none;
         border-radius: 0 0 16px 16px; }
-        body .main .grid-container .p-desc .p-left {
-          padding: 0 0 0 16px;
-          width: 100%; }
-          body .main .grid-container .p-desc .p-left p {
-            font-size: 13px;
-            padding: 24px 32px 0 0; }
-          body .main .grid-container .p-desc .p-left h1 {
-            padding: 24px 0; }
-        body .main .grid-container .p-desc .p-right {
-          padding: 0 40px 64px 0; }
-          body .main .grid-container .p-desc .p-right p {
-            padding: 24px 0 0 0; }
-          body .main .grid-container .p-desc .p-right h2 {
-            padding: 12px 0; }
+        body .main .grid-container .p-desc .p-in {
+          display: block; }
+          @media (min-width: 992px) {
+            body .main .grid-container .p-desc .p-in {
+              display: flex; } }
+          body .main .grid-container .p-desc .p-in .p-left {
+            padding: 0 16px;
+            width: 100%;
+            max-width: 480px; }
+            body .main .grid-container .p-desc .p-in .p-left p {
+              font-size: 13px;
+              padding: 24px 32px 0 0; }
+            body .main .grid-container .p-desc .p-in .p-left h1 {
+              padding: 24px 0; }
+            @media (min-width: 992px) {
+              body .main .grid-container .p-desc .p-in .p-left {
+                padding: 0 0 0 16px;
+                max-width: unset; } }
+          body .main .grid-container .p-desc .p-in .p-right {
+            padding: 0 16px 32px 16px;
+            max-width: 720px; }
+            body .main .grid-container .p-desc .p-in .p-right p {
+              padding: 24px 0 0 0; }
+            body .main .grid-container .p-desc .p-in .p-right h2 {
+              padding: 12px 0; }
+            @media (min-width: 992px) {
+              body .main .grid-container .p-desc .p-in .p-right {
+                padding: 0 40px 64px 0;
+                max-width: unset; } }
         body .main .grid-container .p-desc h1, body .main .grid-container .p-desc h2 {
           font-family: 'Josefin Sans', sans-serif;
           color: #F3F3F3;
