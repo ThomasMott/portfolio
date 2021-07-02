@@ -22,7 +22,6 @@ body {
 				'pr5'
 				'pr6';
 			grid-column: 0px;
-			grid-row-gap: 32px;
 			padding: 24px;
 
 			.pr1 {
@@ -59,7 +58,6 @@ body {
 			.p-desc {
 				background-color: $black_jet;
 				display: none;
-				border-radius: 0 0 16px 16px;
 
 				.p-in {
 					display: block;

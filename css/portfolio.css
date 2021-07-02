@@ -18,7 +18,6 @@ body {
       display: grid;
       grid-template-areas: 'pr1' 'pr2' 'pr3' 'pr4' 'pr5' 'pr6';
       grid-column: 0px;
-      grid-row-gap: 32px;
       padding: 24px; }
       body .main .grid-container .pr1 {
         grid-area: pr1;
@@ -39,8 +38,7 @@ body {
         display: flex; }
       body .main .grid-container .p-desc {
         background-color: #363537;
-        display: none;
-        border-radius: 0 0 16px 16px; }
+        display: none; }
         body .main .grid-container .p-desc .p-in {
           display: block; }
           @media (min-width: 992px) {
