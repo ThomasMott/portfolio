@@ -8,7 +8,7 @@ function init() {
 
 function createMagic() {
 
-	for (i = 12; i <= 88; i += 2) {
+	for (i = 8; i < 92; i += 2) {
 
 		for(j = 12; j <= 88; j += 4) {
 

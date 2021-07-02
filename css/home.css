@@ -32,13 +32,13 @@
     top: 20%;
     z-index: 20; }
     .main .main-title h1 {
-      font-size: 48px;
+      font-size: 40px;
       line-height: 56px;
       padding-bottom: 16px;
       color: #FFF;
       padding: 8px; }
-      .main .main-title h1 span {
-        color: #fccd6b; }
+    .main .main-title span {
+      color: #fccd6b; }
     .main .main-title p {
       font-size: 16px;
       line-height: 24px;
@@ -62,13 +62,13 @@
       .background .background-inner {
         padding: 24px; } }
   .background .background-magic {
-    background-color: #FFF; }
+    background-color: #F7F8F6; }
   .background .circle-s {
     display: none;
     border-radius: 50%;
     z-index: -1;
-    height: 8px;
-    width: 8px; }
+    height: 4px;
+    width: 4px; }
     @media (min-width: 1300px) {
       .background .circle-s {
         display: block; } }

@@ -35,15 +35,15 @@
 		z-index: 20;
 
 		h1 {
-			font-size: 48px;
+			font-size: 40px;
 			line-height: 56px;
 			padding-bottom: 16px;
 			color: $white;
 			padding: 8px;
+		}
 
-			span {
-				color: $yellow_nicc;
-			}
+		span {
+			color: $yellow_nicc;
 		}
 
 		p {
@@ -81,15 +81,15 @@
 	}
 
 	.background-magic {
-		background-color: $white;
+		background-color: $white_off;
 	}
 
 	.circle-s {
 		display: none;
 		border-radius: 50%;
 		z-index: -1;
-		height: 8px;
-		width: 8px;
+		height: 4px;
+		width: 4px;
 
 		@media (min-width: $breakpoint-lg) {
 			display: block;

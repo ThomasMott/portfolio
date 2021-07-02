@@ -77,17 +77,24 @@ body {
           color: #FFF; }
       body .main .grid-container .btn-container {
         display: flex;
-        justify-content: center; }
+        justify-content: center;
+        align-items: center; }
         body .main .grid-container .btn-container .btn {
           background-color: #f68ddc;
           border-radius: 32px;
           text-align: center;
-          padding: 16px 32px;
+          padding: 6px 16px;
           color: #FFF;
           cursor: pointer;
-          width: 240px;
           text-decoration: none;
-          margin: 16px; }
+          margin: 16px;
+          font-size: 14px; }
+        body .main .grid-container .btn-container .soc-svg {
+          filter: contrast(0);
+          width: unset;
+          height: 28px; }
+          body .main .grid-container .btn-container .soc-svg:hover {
+            filter: invert(64%) sepia(40%) saturate(6400%) hue-rotate(64deg) brightness(60%) contrast(102%); }
       body .main .grid-container .btn:hover {
         background-color: #6F73D2; }
       body .main .grid-container .title {
