@@ -21,12 +21,12 @@
 	}
 
 	li a:hover {
-		color: $yellow_nicc;
+		color: $pink_dark;
 		text-decoration: none;
 	}
 
 	#current {
-		color: $yellow_nicc;
+		color: $pink_dark;
 		text-decoration: none;
 		cursor: inherit;
 	}
@@ -62,7 +62,7 @@
 		}
 
 		&:hover .eye{
-			background: $yellow_nicc;
+			background: $pink_dark;
 		}
 
 		&:hover .eyelash{
