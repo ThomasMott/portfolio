@@ -1,8 +1,11 @@
-@import './variables.scss';
+@import './_variables.scss';
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 
 body {
-	background-color: $white_off;
+
+	&.portfolio {
+		background-color: $white_off;
+	}
 
 	.main {
 		display: flex;
@@ -69,7 +72,7 @@ body {
 					.p-left {
 						padding: 0 16px;
 						width: 100%;
-						max-width: 480px;
+						max-width: 400px;
 
 						p {
 							font-size: 13px;
@@ -82,7 +85,7 @@ body {
 
 						@media (min-width: $breakpoint-md) {
 							padding: 0 0 0 16px;
-							max-width: unset;
+							max-width:  34%;
 						}
 					}
 
@@ -92,6 +95,12 @@ body {
 
 						p {
 							padding: 24px 0 0 0;
+						}
+
+						a {
+							color: $pink_dark;
+							text-decoration: none;
+							font-size: 14px;
 						}
 
 						h2 {
@@ -111,7 +120,7 @@ body {
 					text-align: left;
 				}
 
-				p {
+				p, a {
 					font-family: 'Josefin Sans', sans-serif;
 					color: $white;
 				}
