@@ -28,7 +28,7 @@ body.about {
       body.about .main .about-top .about-img {
         width: 320px;
         height: 320px;
-        border-radius: 16px;
+        border-radius: 8px;
         margin: 0 48px 0 0;
         object-fit: cover;
         display: none; }
@@ -40,7 +40,8 @@ body.about {
           font-size: 40px;
           line-height: 48px; }
         body.about .main .about-top .pri-txt h2 {
-          line-height: 36px; }
+          line-height: 36px;
+          max-width: 600px; }
       body.about .main .about-top .btn-container {
         display: flex;
         justify-content: center;
@@ -345,8 +346,12 @@ body.about {
     display: none;
     position: absolute;
     top: 13px;
-    left: 50%;
+    right: 9px;
     transform: translateX(-50%); }
+    @media (min-width: 768px) {
+      .nav .eye-all .eyelash {
+        right: unset;
+        left: 50%; } }
   .nav .eye-all .eye {
     width: 28px;
     height: 20px;

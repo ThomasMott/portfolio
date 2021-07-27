@@ -37,8 +37,13 @@
 			display: none;
 			position: absolute;
 			top: 13px;
-			left: 50%;
+			right: 9px;
 			transform: translateX(-50%);
+
+			@media (min-width: $breakpoint-sm) {
+				right: unset;
+				left: 50%;
+			}
 		}
 
 		.eye {
