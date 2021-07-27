@@ -36,11 +36,11 @@ body.about {
         margin: 8px; }
         body.about .main .about-top .pri-txt h1 {
           color: #363537;
-          font-weight: 600;
-          font-size: 40px;
-          line-height: 48px; }
+          font-size: 64px;
+          line-height: 72px; }
         body.about .main .about-top .pri-txt h2 {
-          line-height: 36px;
+          line-height: 32px;
+          letter-spacing: -0.4px;
           max-width: 600px; }
       body.about .main .about-top .btn-container {
         display: flex;
@@ -73,7 +73,8 @@ body.about {
       padding: 64px 0; }
       body.about .main .about-sec h2 {
         color: #363537;
-        font-weight: 600; }
+        font-size: 40px;
+        line-height: 56px; }
       body.about .main .about-sec .sec-txt {
         padding: 0 32px 0 8px; }
         body.about .main .about-sec .sec-txt p {
