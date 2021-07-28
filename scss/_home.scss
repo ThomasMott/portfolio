@@ -34,14 +34,6 @@
 		top: 20%;
 		z-index: 20;
 
-		h1 {
-			font-size: 40px;
-			line-height: 56px;
-			padding-bottom: 16px;
-			color: $white;
-			padding: 8px;
-		}
-
 		span {
 			color: $pink_dark;
 		}
@@ -56,14 +48,6 @@
 
 		@media (min-width: $breakpoint-md) {
 			top: 35%;
-		}
-
-		@media (min-width: $breakpoint-xl) {
-
-			h1 {
-				font-size: 64px;
-				line-height: 72px;
-			}
 		}
 	}
 }
