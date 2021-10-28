@@ -1,127 +1,157 @@
 @import './_variables.scss';
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 /* nav */
-.nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: $black_jet;
-	padding: 16px;
-	height: 64px;
+.nav-out {
+	background-color: $white_off;
 	width: 100%;
-	position: absolute;
-	z-index: 8;
-	top: 0;
 
-	li a {
-		font-family: 'Josefin Sans', sans-serif;
-		text-decoration: none;
-		color: #ffffff;
-		font-size: 24px;
-	}
+	&.home {
+		background-color: $black_jet;
 
-	li a:hover {
-		color: $pink_dark;
-		text-decoration: none;
-	}
+		.nav {
 
-	#current {
-		color: $pink_dark;
-		text-decoration: none;
-		cursor: inherit;
-	}
+			.soc-svg {
+				filter: contrast(0) brightness(100);
+			}
 
-	.eye-all {
+			.eye-all {
 
-		.eyelash {
-			display: none;
-			position: absolute;
-			top: 13px;
-			right: 9px;
-			transform: translateX(-50%);
+				.eye {
+					background: $white_off;
 
-			@media (min-width: $breakpoint-sm) {
-				right: unset;
-				left: 50%;
+					.ball {
+						background: $black_jet;
+					}
+				}
+			}
+
+			li a {
+				color: $white_off;
 			}
 		}
+	}
 
-		.eye {
-			width: 28px;
-			height: 20px;
-			background: $white_off;
-			position: relative;
-			border-radius: 50%;
-			overflow: hidden;
+	.nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 16px;
+		height: 64px;
+		max-width: 1280px;
+		margin: 0 auto;
+		position: sticky;
+		border-bottom: 2px solid $black_jet;
 
-			.ball {
-				width: 12px;
-				height: 12px;
-				background: $black_jet;
+		li a {
+			font-family: 'Josefin Sans', sans-serif;
+			text-decoration: none;
+			color: $black_jet;
+			font-size: 24px;
+		}
+
+		li a:hover {
+			color: $pink_dark;
+			text-decoration: none;
+		}
+
+		#current {
+			color: $pink_dark;
+			text-decoration: none;
+			cursor: inherit;
+		}
+
+		.eye-all {
+
+			.eyelash {
+				display: none;
 				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
+				top: 13px;
+				right: 9px;
+				transform: translateX(-50%);
+
+				@media (min-width: $breakpoint-sm) {
+					right: unset;
+					left: 50%;
+				}
+			}
+
+			.eye {
+				width: 28px;
+				height: 28px;
+				background: $black_jet;
+				position: relative;
 				border-radius: 50%;
+				overflow: hidden;
+
+				.ball {
+					width: 12px;
+					height: 12px;
+					background: $white_off;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					border-radius: 50%;
+				}
+			}
+
+			&:hover .eye{
+				background: $pink_dark;
+			}
+
+			&:hover .eyelash{
+				display: block;
 			}
 		}
 
-		&:hover .eye{
-			background: $pink_dark;
-		}
 
-		&:hover .eyelash{
-			display: block;
-		}
-	}
-
-
-	.social {
-		display: none;
-		width: 240px;
-
-		a {
-			float: right;
-		}
-
-		@media (min-width: $breakpoint-sm) {
-			display: block;
-		}
-	}
-
-	.soc-svg {
-		filter: contrast(0) brightness(100);
-		cursor: pointer;
-		width: 16px;
-		margin: 8px;
-	}
-
-	.soc-svg:hover {
-		filter: none;
-		width: 32px;
-		margin:0;
-	}
-
-	.nav-links {
-		list-style: none;
-		width: 240px;
-
-		li {
-			display: inline;
-			padding:  0 8px;
+		.social {
+			display: none;
+			width: 240px;
 
 			a {
-				font-size: 18px;
+				float: right;
+			}
+
+			@media (min-width: $breakpoint-sm) {
+				display: block;
 			}
 		}
-	}
 
-	bottom p {
-		display: flex;
-		justify-content: center;
-		padding: 0 0 32px 0;
-	}
+		.soc-svg {
+			filter: contrast(0) brightness(0.48);
+			cursor: pointer;
+			width: 20px;
+			margin: 6px;
 
+			&:hover {
+				filter: none;
+				width: 32px;
+				margin: 0;
+			}
+		}
+
+		.nav-links {
+			list-style: none;
+			width: 240px;
+
+			li {
+				display: inline;
+				padding:  0 8px;
+
+				a {
+					font-size: 18px;
+				}
+			}
+		}
+
+		bottom p {
+			display: flex;
+			justify-content: center;
+			padding: 0 0 32px 0;
+		}
+
+	}
 }
 
 .nav-lower {
@@ -135,18 +165,4 @@
 	position: absolute;
 	top: 64px;
 	z-index: 8;
-}
-
-@media (min-width: 600px) {
-
-    .nav {
-        padding: 16px 40px;
-    }
-}
-
-@media (min-width: 880px) {
-
-    .nav {
-        padding: 16px 48px;
-    }
 }

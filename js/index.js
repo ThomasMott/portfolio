@@ -3,7 +3,6 @@ window.onload = init;
 function init() {
 	createMagic();
 	for (let j of document.querySelectorAll('.background-inner')) {j.addEventListener("mouseover", colorMagic)};
-	document.getElementById('img').addEventListener("mouseover", doot);
 }
 
 function createMagic() {
@@ -38,7 +37,3 @@ function colorMagic() {
 
 	magic.style.backgroundColor = color;
 };
-
-function doot() {
-	console.log("doot");
-}
