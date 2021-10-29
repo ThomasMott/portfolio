@@ -35,3 +35,13 @@ p {
 	color: #4B646A;
 	letter-spacing: 0.2px;
 }
+
+a {
+	text-decoration: none;
+	color: $voilet_blue;
+
+	&:hover {
+		text-decoration: underline;
+		color: $voilet_dark;
+	}
+}

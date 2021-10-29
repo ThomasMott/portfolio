@@ -390,6 +390,8 @@ body.inner {
   border-radius: 50%; }
   .port .port-out {
     padding: 16px; }
+    .port .port-out:hover .port-img {
+      border-radius: 50%; }
     .port .port-out .port-img {
       border-radius: 4px;
       overflow: clip;
@@ -399,8 +401,6 @@ body.inner {
       width: 400px;
       height: 400px;
       object-fit: cover; }
-      .port .port-out .port-img:hover {
-        border-radius: 50%; }
       .port .port-out .port-img img {
         height: 100%;
         width: 100%;
@@ -454,3 +454,10 @@ p {
   line-height: 24px;
   color: #4B646A;
   letter-spacing: 0.2px; }
+
+a {
+  text-decoration: none;
+  color: #6F73D2; }
+  a:hover {
+    text-decoration: underline;
+    color: #4549c4; }
