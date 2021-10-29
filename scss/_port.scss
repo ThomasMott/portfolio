@@ -15,18 +15,23 @@
 			border-radius: 4px;
 			overflow: clip;
 			margin: auto;
-			max-width: 400px;
-			max-height: 400px;
-			width: 400px;
-			height: 400px;
+			max-width: 280px;
+			max-height: 280px;
+			width: 280px;
+			height: 280px;
 			object-fit: cover;
-
-
 
 			img {
 				height: 100%;
 				width: 100%;
 				object-fit: cover;
+			}
+
+			@media (min-width: $breakpoint-xs) {
+				max-width: 400px;
+				max-height: 400px;
+				width: 400px;
+				height: 400px;
 			}
 		}
 	}
