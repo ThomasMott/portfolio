@@ -3,13 +3,11 @@ filterSelection("all");
 
 // Filter main function
 function filterSelection(c) {
-	console.log("nooo");
   var x, i;
   x = document.getElementsByClassName("fd");
   if (c == "all") c = "";
   // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
-	console.log("fudge");
     RemoveClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
   }
