@@ -77,6 +77,25 @@ body.inner {
   margin: 16px 0;
   line-height: 32px; }
 
+.fd {
+  display: none; }
+
+.show {
+  display: block; }
+
+.btn {
+  padding: 8px 16px;
+  border: 1px solid #C7C7C7;
+  border-radius: 8px;
+  background-color: unset;
+  font-size: 15px;
+  color: #808080;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-right: 16px; }
+  .btn:hover {
+    background-color: #f3f3f3;
+    cursor: pointer; }
+
 .grid {
   width: 100%;
   margin-left: auto;

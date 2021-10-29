@@ -45,13 +45,14 @@
 	<section class="main" id="main">
 		<div class="grid">
 			<div class="row port">
-				<ul class="ul-s">
-					<li>UI Design</li>
-					<li>UX Design</li>
-					<li>Development</li>
-				</ul>
+				<div id="myBtnContainer">
+					<button class="btn active" onclick="filterSelection('all')">All projects</button>
+					<button class="btn" onclick="filterSelection('ui')">UI design</button>
+					<button class="btn" onclick="filterSelection('ux')">UX design</button>
+					<button class="btn" onclick="filterSelection('dev')">Web development</button>
+				</div>
 				<br><br>
-				<div class="col-12-xs col-12-sm col-6-md col-4">
+				<div class="col-12-xs col-12-sm col-6-md col-4 fd ui ux">
 					<a href="./example.html">
 						<div class="port-out">
 							<div class="port-img">
@@ -60,7 +61,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-12-xs col-12-sm col-6-md col-4">
+				<div class="col-12-xs col-12-sm col-6-md col-4 fd dev">
 					<a href="./example.html">
 						<div class="port-out">
 							<div class="port-img">
@@ -69,7 +70,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-12-xs col-12-sm col-6-md col-4">
+				<div class="col-12-xs col-12-sm col-6-md col-4 fd dev">
 					<a href="./example.html">
 						<div class="port-out">
 							<div class="port-img">
@@ -78,7 +79,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-12-xs col-12-sm col-6-md col-4">
+				<div class="col-12-xs col-12-sm col-6-md col-4 fd dev">
 					<a href="./example.html">
 						<div class="port-out">
 							<div class="port-img">
@@ -87,7 +88,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-12-xs col-12-sm col-6-md col-4">
+				<div class="col-12-xs col-12-sm col-6-md col-4 fd dev">
 					<a href="./example.html">
 						<div class="port-out">
 							<div class="port-img">
@@ -96,7 +97,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-12-xs col-12-sm col-6-md col-4">
+				<div class="col-12-xs col-12-sm col-6-md col-4 fd ui">
 					<a href="./example.html">
 						<div class="port-out">
 							<div class="port-img">
@@ -242,5 +243,6 @@
 	</div> -->
 </body>
 <script src='../js/portfolio.js'></script>
+<script src='../js/filter.js'></script>
 <!-- <script src='../js/eye.js'></script> -->
 </html>
