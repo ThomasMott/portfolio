@@ -17,7 +17,7 @@
 				<ul class="nav-links">
 					<li><a id="current" href="./projects/">projects</a></li>
 					<li><a href="../about/">about</a></li>
-					<li><a href="mailto:ThomasNMott1997@gmail.com">contact</a></li>
+					<li><a href="../contact/">contact</a></li>
 				</ul>
 			</nav>
 			<a href="../">
@@ -34,7 +34,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="main">
+	<section id="main">
 		<div class="grid">
 			<p>My work</p>
 			<h1 class="title">Selected projects</h1>
@@ -43,17 +43,18 @@
 			<a href="../static/Thomas-Mott-UX-portfolio.pdf" download>download portfolio</a>
 		</div>
 	</section>
-	<section class="main" id="main">
+	<section>
 		<div class="grid">
 			<div class="row port">
 				<div id="myBtnContainer">
 					<button class="btn active" onclick="filterSelection('all')">All projects</button>
 					<button class="btn" onclick="filterSelection('ui')">UI design</button>
 					<button class="btn" onclick="filterSelection('ux')">UX design</button>
-					<button class="btn" onclick="filterSelection('dev')">Web development</button>
+					<button class="btn" onclick="filterSelection('de')">Web development</button>
+					<button class="btn" onclick="filterSelection('pd')">Product design</button>
+					<button class="btn" onclick="filterSelection('gr')">Graphic design</button>
 				</div>
-				<br><br>
-				<div class="col-12-xs col-12-sm col-6-md col-4 fd ui ux">
+				<div class="col-12-xs col-12-sm col-4-md col-4 fd ui ux">
 					<a href="./petlet.html">
 						<div class="port-out">
 							<div class="port-img">
@@ -62,7 +63,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-12-xs col-12-sm col-6-md col-4 fd dev">
+				<div class="col-12-xs col-12-sm col-4-md col-4 fd dev">
 					<a href="#">
 						<div class="port-out">
 							<div class="port-img">
@@ -71,7 +72,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-12-xs col-12-sm col-6-md col-4 fd dev">
+				<div class="col-12-xs col-12-sm col-4-md col-4 fd dev">
 					<a href="#">
 						<div class="port-out">
 							<div class="port-img">
@@ -80,7 +81,16 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-12-xs col-12-sm col-6-md col-4 fd dev">
+				<div class="col-12-xs col-12-sm col-4-md col-4 fd dev">
+					<a href="#">
+						<div class="port-out">
+							<div class="port-img">
+								<img src="../static/images/as/as-2.jpg" alt="#">
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-12-xs col-12-sm col-4-md col-4 fd dev">
 					<a href="#">
 						<div class="port-out">
 							<div class="port-img">
@@ -89,16 +99,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-12-xs col-12-sm col-6-md col-4 fd dev">
-					<a href="#">
-						<div class="port-out">
-							<div class="port-img">
-								<img src="../static/images/test.jpg" alt="#">
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-12-xs col-12-sm col-6-md col-4 fd ui">
+				<div class="col-12-xs col-12-sm col-4-md col-4 fd ui">
 					<a href="#">
 						<div class="port-out">
 							<div class="port-img">
@@ -117,7 +118,5 @@
 		<svg xmlns="http://www.w3.org/2000/svg" width="126.642" height="19.684" viewBox="0 0 126.642 19.684"><defs><style>.z{fill:#d8d4d4;opacity:0.87;mix-blend-mode:multiply;isolation:isolate;}</style></defs><path class="z" d="M258.767,419.842s19.167.575,24.517,5.514c5.625,5.193,11.528,13.3-12.69,13.146s-45.687-6.822-66-4.706-36.98,5.762-41.836,4.954,6.252-13.631,29.754-17.389S258.767,419.842,258.767,419.842Z" transform="translate(-161.638 -419.18)"/></svg>
 	</div> -->
 </body>
-<script src='../js/projects.js'></script>
 <script src='../js/filter.js'></script>
-<!-- <script src='../js/eye.js'></script> -->
 </html>

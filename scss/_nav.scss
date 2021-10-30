@@ -4,11 +4,13 @@
 .nav-out {
 	background-color: $white_off;
 	width: 100%;
+	display: block;
 
 	&.home {
 		background-color: $black_jet;
 
 		.nav {
+			border-bottom: 2px solid $white_off;
 
 			.soc-svg {
 				filter: contrast(0) brightness(100);
