@@ -1,5 +1,5 @@
-@import './_variables.scss';
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
 /* nav */
 .nav-out {
 	background-color: $white_off;
@@ -61,19 +61,6 @@
 		}
 
 		.eye-all {
-
-			.eyelash {
-				display: none;
-				position: absolute;
-				top: 13px;
-				right: 9px;
-				transform: translateX(-50%);
-
-				@media (min-width: $breakpoint-sm) {
-					right: unset;
-					left: 50%;
-				}
-			}
 
 			.eye {
 				width: 28px;
@@ -140,7 +127,12 @@
 				padding:  0 8px;
 
 				a {
-					font-size: 18px;
+					font-size: 16px;
+					display: inline-block;
+				}
+
+				&:first-of-type {
+					padding-left: 0;
 				}
 			}
 		}
@@ -154,15 +146,15 @@
 	}
 }
 
-.nav-lower {
-	background-image: url(../static/images/dropdown.png);
-	height: 8px;
-	width: 100%;
-	background-color: transparent;
-	background-repeat: repeat-x;
-	background-size: 80px 8px;
-	background-position: center center;
-	position: absolute;
-	top: 64px;
-	z-index: 8;
-}
+// .nav-lower {
+// 	background-image: url(../static/images/dropdown.png);
+// 	height: 8px;
+// 	width: 100%;
+// 	background-color: transparent;
+// 	background-repeat: repeat-x;
+// 	background-size: 80px 8px;
+// 	background-position: center center;
+// 	position: absolute;
+// 	top: 64px;
+// 	z-index: 8;
+// }

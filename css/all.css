@@ -7,54 +7,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
-body.inner {
-  background-color: #F7F8F6; }
-  body.inner .main {
-    margin: 32px auto;
-    max-width: 1280px;
-    display: block; }
-    body.inner .main .title {
-      color: #363537;
-      font-weight: 600;
-      font-size: 56px; }
-    body.inner .main .sec-title {
-      color: #363537;
-      font-weight: 600;
-      font-size: 32px;
-      line-height: 56px; }
-    body.inner .main p, body.inner .main li {
-      color: #808080; }
-    body.inner .main li {
-      font-family: 'Josefin Sans', sans-serif; }
-    body.inner .main ul {
-      list-style: none; }
-    body.inner .main .grid .ul-f {
-      border: 1px solid #C7C7C7;
-      padding: 16px;
-      margin: 8px;
-      border-radius: 8px; }
-      body.inner .main .grid .ul-f img {
-        padding-bottom: 16px; }
-      body.inner .main .grid .ul-f li {
-        padding: 6px 0; }
-      body.inner .main .grid .ul-f .hlght {
-        color: #808080;
-        margin-bottom: 16px;
-        line-height: 40px; }
-      body.inner .main .grid .ul-f.h {
-        display: flex; }
-        body.inner .main .grid .ul-f.h img {
-          padding-bottom: 0;
-          padding-right: 16px; }
-    body.inner .main .grid .ul-s {
-      display: flex;
-      flex-wrap: wrap; }
-      body.inner .main .grid .ul-s li {
-        border: 1px solid #C7C7C7;
-        border-radius: 8px;
-        margin: 8px;
-        padding: 8px 16px; }
-
 .access-skip {
   position: fixed;
   left: -1000px;
@@ -91,7 +43,7 @@ body.inner {
   font-size: 15px;
   color: #808080;
   font-family: 'Josefin Sans', sans-serif;
-  margin-right: 16px; }
+  margin: 8px 16px 8px 0; }
   .btn:hover {
     background-color: #f3f3f3;
     cursor: pointer; }
@@ -226,12 +178,6 @@ body.inner {
     .grid .col-12 {
       width: 100%; } }
 
-/*breakpoints*/
-/*colours*/
-/*borders*/
-/*shadow*/
-/*radius*/
-/*spacing variables*/
 .main {
   padding: 16px;
   display: flex;
@@ -256,9 +202,7 @@ body.inner {
         width: 100%;
         height: 100%; } }
   .main .main-title {
-    position: absolute;
-    top: 20%;
-    z-index: 20; }
+    padding-top: 64px; }
     .main .main-title span {
       color: #f68ddc; }
     .main .main-title p {
@@ -269,7 +213,9 @@ body.inner {
       max-width: 520px; }
     @media (min-width: 992px) {
       .main .main-title {
-        top: 35%; } }
+        top: 35%;
+        position: absolute;
+        padding-top: 0; } }
 
 .background {
   z-index: 1; }
@@ -291,12 +237,54 @@ body.inner {
       .background .circle-s {
         display: block; } }
 
-/*breakpoints*/
-/*colours*/
-/*borders*/
-/*shadow*/
-/*radius*/
-/*spacing variables*/
+body.inner {
+  background-color: #F7F8F6; }
+  body.inner .main {
+    margin: 32px auto;
+    max-width: 1280px;
+    display: block; }
+    body.inner .main .title {
+      color: #363537;
+      font-weight: 600;
+      font-size: 56px; }
+    body.inner .main .sec-title {
+      color: #363537;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 56px; }
+    body.inner .main p, body.inner .main li {
+      color: #808080; }
+    body.inner .main li {
+      font-family: 'Josefin Sans', sans-serif; }
+    body.inner .main ul {
+      list-style: none; }
+    body.inner .main .grid .ul-f {
+      border: 1px solid #C7C7C7;
+      padding: 16px;
+      margin: 8px;
+      border-radius: 8px; }
+      body.inner .main .grid .ul-f img {
+        padding-bottom: 16px; }
+      body.inner .main .grid .ul-f li {
+        padding: 6px 0; }
+      body.inner .main .grid .ul-f .hlght {
+        color: #808080;
+        margin-bottom: 16px;
+        line-height: 40px; }
+      body.inner .main .grid .ul-f.h {
+        display: flex; }
+        body.inner .main .grid .ul-f.h img {
+          padding-bottom: 0;
+          padding-right: 16px; }
+    body.inner .main .grid .ul-s {
+      display: flex;
+      flex-wrap: wrap; }
+      body.inner .main .grid .ul-s li {
+        border: 1px solid #C7C7C7;
+        border-radius: 8px;
+        margin: 8px 16px 8px 0;
+        padding: 8px 16px; }
+
 /* nav */
 .nav-out {
   background-color: #F7F8F6;
@@ -333,16 +321,6 @@ body.inner {
       color: #f68ddc;
       text-decoration: none;
       cursor: inherit; }
-    .nav-out .nav .eye-all .eyelash {
-      display: none;
-      position: absolute;
-      top: 13px;
-      right: 9px;
-      transform: translateX(-50%); }
-      @media (min-width: 768px) {
-        .nav-out .nav .eye-all .eyelash {
-          right: unset;
-          left: 50%; } }
     .nav-out .nav .eye-all .eye {
       width: 28px;
       height: 28px;
@@ -387,23 +365,14 @@ body.inner {
         display: inline;
         padding: 0 8px; }
         .nav-out .nav .nav-links li a {
-          font-size: 18px; }
+          font-size: 16px;
+          display: inline-block; }
+        .nav-out .nav .nav-links li:first-of-type {
+          padding-left: 0; }
     .nav-out .nav bottom p {
       display: flex;
       justify-content: center;
       padding: 0 0 32px 0; }
-
-.nav-lower {
-  background-image: url(../static/images/dropdown.png);
-  height: 8px;
-  width: 100%;
-  background-color: transparent;
-  background-repeat: repeat-x;
-  background-size: 80px 8px;
-  background-position: center center;
-  position: absolute;
-  top: 64px;
-  z-index: 8; }
 
 .port {
   border-radius: 50%; }
@@ -431,12 +400,6 @@ body.inner {
           width: 400px;
           height: 400px; } }
 
-/*breakpoints*/
-/*colours*/
-/*borders*/
-/*shadow*/
-/*radius*/
-/*spacing variables*/
 * {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -446,8 +409,6 @@ body.inner {
 
 body {
   background-color: #363537; }
-  body .main {
-    height: 100%; }
 
 h1 {
   font-size: 40px;
@@ -482,7 +443,10 @@ p {
 
 a {
   text-decoration: none;
-  color: #6F73D2; }
+  font-size: 16px;
+  color: #6F73D2;
+  display: block;
+  padding: 16px 0; }
   a:hover {
     text-decoration: underline;
     color: #4549c4; }

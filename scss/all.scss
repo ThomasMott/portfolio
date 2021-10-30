@@ -1,9 +1,12 @@
-@import './inner';
+//import vars first
+@import './variables';
+
 @import './accessiblity';
 @import './case';
 @import './filter';
 @import './grid';
 @import './home';
+@import './inner';
 @import './nav';
 @import './port';
 @import './style';
