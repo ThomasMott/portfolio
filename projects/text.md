@@ -28,62 +28,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="pr pr3" onclick="openModal(3)">
-			<div class="p-img" id="p3-img-js">
-				<img src="../static/images/ss/ss.jpg">
-				<img class="sec-img" src="../static/images/ss/ss-2.jpg">
-				<img class="sec-img" src="../static/images/ss/ss-3.jpg">
-			</div>
-			<div class="p-desc" id="p3-js">
-				<div class="p-in">
-					<div class="p-left">
-						<h1>Smart Source</h1>
-						<p><em>Discipline learned: Rapid Prototyping, Research methods and Usability evaluations</em></p>
-						<p>Assessment metrics for the Ralph Lauren website were conducted using expert review, satisfaction and performance assessments.</p><p>Tests run on the site included:Heuristic analysis, Task Time, User Errors, User Efficiency (lostness), Thematic analysis, Biometrics (eye tracking), Think aloud & SUS</p>
-					</div>
-					<div class="p-right">
-						<h2>Approach</h2>
-						<p>The design process followed the double diamond, with me researching and defining all the contextual issues. I then conducted interviews, card sorting, bodystorming sessions and had participants create photo diaries to get lots of rich qualitative data. I then organised and synthsized usability problems and began to ideate.</p>
-						<h2>Testing</h2>
-						<p>Testing was conducted with real SME's (small, medium enterprises) that I had personally contacted and worked alongside for the duration of the project.</p>
-						<h2>Goals</h2>
-						<p>As someone with experience in industry and a passion for projects that help to support a green future, the main goal of the project, was to reduce the impact of manufacturing companies on national waste production.</p>
-						<h2>Outcome</h2>
-						<p>Companies that I had worked with were incredibly happy with the final outcome and the prospects that the platform could offer them.</p>
-						<a href="https://gcza99.axshare.com">View the prototype</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="pr pr4" onclick="openModal(4)">
-			<div class="p-img" id="p4-img-js">
-				<img src="../static/images/rl/rl.jpg">
-				<img class="sec-img" src="../static/images/rl/rl-2.jpg">
-				<img class="sec-img" src="../static/images/rl/rl-3.jpg">
-			</div>
-			<div class="p-desc" id="p4-js">
-				<div class="p-in">
-					<div class="p-left">
-						<h1>Ralph Lauren</h1>
-						<p><em>Discipline learned: usability principles and practice</em></p>
-						<p>Assessment metrics for the Ralph Lauren website were conducted using expert review, satisfaction and performance assessments.Tests run on the site included:Heuristic analysis, Task Time, User Errors, User Efficiency (lostness), Thematic analysis, Biometrics (eye tracking), Think aloud & SUS</p>
-					</div>
-					<div class="p-right">
-						<h2>Approach</h2>
-						<p>The design process followed the double diamond, with me researching and defining all the services issues. I then catalogued all the usability problems and began to ideate all the possible ways to make the site more intuitive and satisfying to navigate.</p>
-						<h2>Testing</h2>
-						<p>The design process followed the double diamond, with me researching and defining all the services issues. I then catalogued all the usability problems and began to ideate all the possible ways to make the site more intuitive and satisfying to navigate.</p>
-						<h2>Goals</h2>
-						<p>The main goal of the project, adding value to the Ralph Lauren website was particularly challenging. The company has a design team dedicated to improving sales and conversion rates. This menat that research and testing had to be very user focused to achieve a meaningful design outcome.</p>
-						<h2>Outcome</h2>
-						<p>Testing showed that there was a statistically significant decrease in SUS scores between the original website (w1) (M= 82.1.6, SD= 9.674) to the redesign (w2) (M= 89.1 SD= 10.126), t (25) = 3.013, p < .05 (two tailed). The mean difference in SUS scores was 7.0 The eta squared statistic (0.275) indicated a large effect size. A power of .90 was achieved.</p>
-						<p>This means that the Ralph Lauren redesign is more ‘usable’ and satisfying than the original website.</p>
-						<p>We are almost 100% certain the difference is not due to chance</p>
-						<p>We are 90% certain this answer is correct</p>
-					</div>
-				</div>
-			</div>
-
 		</div>
 		<div class="pr pr5" onclick="openModal(5)">
 			<div class="p-img" id="p5-img-js">
