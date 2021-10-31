@@ -219,7 +219,7 @@ section {
         width: 100%;
         height: 100%; } }
   section .main-title {
-    padding-top: 64px; }
+    padding: 64px 16px 0 16px; }
     section .main-title span {
       color: #f68ddc; }
     section .main-title p {
@@ -232,7 +232,7 @@ section {
       section .main-title {
         top: 35%;
         position: absolute;
-        padding-top: 0; } }
+        padding: 0; } }
 
 .background {
   z-index: 1; }

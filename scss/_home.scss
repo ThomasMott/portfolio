@@ -27,7 +27,7 @@ section {
 	}
 
 	.main-title {
-		padding-top: 64px;
+		padding: 64px 16px 0 16px;
 
 		span {
 			color: $pink_dark;
@@ -44,7 +44,7 @@ section {
 		@media (min-width: $breakpoint-md) {
 			top: 35%;
 			position: absolute;
-			padding-top: 0;
+			padding: 0;
 		}
 	}
 }
