@@ -8,6 +8,8 @@
 
 			.port-img {
 				border-radius: 50%;
+				// box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+				transform: translate3D(0,-1px,0) scale(1.02);
 			}
 		}
 
@@ -20,6 +22,8 @@
 			width: 280px;
 			height: 280px;
 			object-fit: cover;
+			// box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+			transition: all .4s ease;
 
 			img {
 				height: 100%;
