@@ -41,8 +41,20 @@ section {
 			max-width: 520px;
 		}
 
+		h1 {
+			padding-bottom: 0;
+		}
+
+		a {
+			color: $cyan_light;
+
+			&:hover {
+				color: $voilet_blue;
+			}
+		}
+
 		@media (min-width: $breakpoint-md) {
-			top: 35%;
+			top: 33%;
 			position: absolute;
 			padding: 0;
 		}

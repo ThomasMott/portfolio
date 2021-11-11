@@ -231,9 +231,15 @@ section {
       color: #FBCAEF;
       padding: 16px 8px 8px 8px;
       max-width: 520px; }
+    section .main-title h1 {
+      padding-bottom: 0; }
+    section .main-title a {
+      color: #C6EFEF; }
+      section .main-title a:hover {
+        color: #6F73D2; }
     @media (min-width: 992px) {
       section .main-title {
-        top: 35%;
+        top: 33%;
         position: absolute;
         padding: 0; } }
 
