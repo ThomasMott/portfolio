@@ -3,6 +3,7 @@
 This my online portfolio repositor, hosted at [https://thomasmott.github.io/portfolio/](https://thomasmott.github.io/portfolio/)
 
 [https://github.com/ThomasMott/portfolio.git](https://github.com/ThomasMott/portfolio.git)
+
 ## Installation
 
 clone repo:
@@ -14,6 +15,16 @@ cd into root folder and install dependencies:
 npm install
 ```
 
+## Gulp Css
+
+To gulp the scss into a clean css file:
+```
+cd into root folder and run either command below:
+```
+npm run scss
+```
+gulp scss
+```
 
 ## Usage
 
