@@ -54,7 +54,7 @@ section {
 		}
 
 		@media (min-width: $breakpoint-md) {
-			top: 33%;
+			top: calc((((100vh - 64px) - 379px) / 2 ) + 64px);
 			position: absolute;
 			padding: 0;
 		}
