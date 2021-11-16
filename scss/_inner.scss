@@ -25,6 +25,14 @@ body {
 				line-height: 56px;
 			}
 
+			.rec-title {
+				color: $black_jet;
+				font-weight: 600;
+				font-size: 32px;
+				line-height: 56px;
+				text-align: center;
+			}
+
 			p, li {
 				color: $grey_concrete;
 			}
@@ -82,6 +90,10 @@ body {
 						border-radius: 8px;
 						margin: 8px 16px 8px 0;
 						padding: 8px 16px;
+
+						&:hover {
+							background-color: $grey_light_1;
+						}
 					}
 				}
 			}

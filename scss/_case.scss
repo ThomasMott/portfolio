@@ -1,8 +1,9 @@
 .case-img {
 	width: 100%;
-	padding: 32px 16px;
 	height: 240px;
 	object-fit: cover;
+	border-radius: 16px;
+	margin: 32px 0;
 
 	@media (min-width: $breakpoint-xs) {
 		height: 400px;
@@ -12,11 +13,18 @@
 section {
 
 	.case {
+		margin: auto;
+		max-width: 1000px;
 
-		p {
+		p, a {
 			font-size: 18px;
 			margin: 16px 0;
 			line-height: 28px;
+			padding: 0 32px;
+		}
+
+		h2 {
+			padding: 0 32px;
 		}
 	}
 }
