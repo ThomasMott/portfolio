@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss": "gulp sass"
+    "scss": "gulp sass",
+	"scss-local": "node-sass --watch scss -o css"
   },
   "author": "",
   "license": "ISC",
