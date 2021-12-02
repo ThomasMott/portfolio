@@ -2,7 +2,7 @@
 
 /* nav */
 .nav-out {
-	background-color: $white_off;
+	background-color: $white;
 	width: 100%;
 	display: block;
 
@@ -10,7 +10,7 @@
 		background-color: $black_jet;
 
 		.nav {
-			border-bottom: 2px solid $white_off;
+			border-bottom: 2px solid $white;
 
 			.soc-svg {
 				filter: contrast(0) brightness(100);
@@ -19,7 +19,7 @@
 			.eye-all {
 
 				.eye {
-					background: $white_off;
+					background: $white;
 
 					.ball {
 						background: $black_jet;
@@ -28,7 +28,7 @@
 			}
 
 			li a {
-				color: $white_off;
+				color: $white;
 			}
 		}
 	}
@@ -75,7 +75,7 @@
 				.ball {
 					width: 12px;
 					height: 12px;
-					background: $white_off;
+					background: $white;
 					position: absolute;
 					top: 50%;
 					left: 50%;

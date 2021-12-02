@@ -3,7 +3,7 @@
 body {
 
 	&.inner {
-		background-color: $white_off;
+		background-color: $white;
 
 		section {
 			display: block;
@@ -91,9 +91,9 @@ body {
 						margin: 8px 16px 8px 0;
 						padding: 8px 16px;
 
-						&:hover {
-							background-color: $grey_light_1;
-						}
+						// &:hover {
+						// 	background-color: $grey_light_1;
+						// }
 					}
 				}
 			}

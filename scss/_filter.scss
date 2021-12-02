@@ -8,16 +8,16 @@
 
 .btn {
 	padding: 8px 16px;
-	border: 1px solid $grey_med;
+	border: 1px solid $grey_concrete;
 	border-radius: 8px;
 	background-color: unset;
 	font-size: 15px;
-	color: $grey_concrete;
+	color: $grey_slate;
 	font-family: 'Josefin Sans', sans-serif;
 	margin: 8px 16px 8px 0;
 
 	&:hover {
-		background-color: #f3f3f3;
+		background-color: $white_off;
 		cursor: pointer;
 	}
 }
