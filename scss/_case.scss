@@ -3,7 +3,8 @@
 	height: 240px;
 	object-fit: cover;
 	border-radius: 16px;
-	margin: 32px 0;
+	margin: 32px 0 8px 0;
+	border: 1px solid $grey_light_2;
 
 	@media (min-width: $breakpoint-xs) {
 		height: 400px;
@@ -15,6 +16,18 @@ section {
 	.case {
 		margin: auto;
 		max-width: 1000px;
+
+		figure {
+
+			figcaption {
+				font-style: italic;
+				color: $grey_stone;
+				padding: 0 32px;
+				margin: 16px 0 32px 0;
+				font-size: 15px;
+				line-height: 23px;
+			}
+		}
 
 		p, a {
 			font-size: 18px;
