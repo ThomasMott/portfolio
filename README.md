@@ -23,7 +23,7 @@ cd into root folder and run either command below:
 ```
 npm run scss
 ```
-gulp scss
+gulp sass
 ```
 
 ## Usage
