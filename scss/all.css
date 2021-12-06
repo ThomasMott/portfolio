@@ -5,6 +5,7 @@
 @import './case';
 @import './cont';
 @import './filter';
+@import './_forms.scss';
 @import './grid';
 @import './home';
 @import './inner';

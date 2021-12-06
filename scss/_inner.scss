@@ -25,6 +25,19 @@ body {
 				line-height: 56px;
 			}
 
+			.sec-txt {
+
+				p {
+
+					@media (min-width: 992px) {
+
+						padding-right: 24px;
+					}
+				}
+
+
+			}
+
 			.rec-title {
 				color: $black_jet;
 				font-weight: 600;
