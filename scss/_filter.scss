@@ -8,16 +8,25 @@
 
 .btn {
 	padding: 8px 16px;
-	border: 1px solid $grey_concrete;
+	border: 1px solid $black_jet;
 	border-radius: 8px;
-	background-color: unset;
-	font-size: 15px;
-	color: $grey_slate;
+	background-color: $black_jet;
+	font-size: 16px;
+	color: $white;
 	font-family: 'Josefin Sans', sans-serif;
 	margin: 8px 16px 8px 0;
 
 	&:hover {
-		background-color: $white_off;
+		background-color: $pink_candy;
+		border: 1px solid $pink_dark;
+		color: $black_dusty;
 		cursor: pointer;
+	}
+
+	&.active {
+		background-color: $white;
+		border: 1px solid $grey_med;
+		color: $grey_concrete;
+		cursor: auto;
 	}
 }
