@@ -1,0 +1,25 @@
+@import '../typography';
+
+h1 {
+	color: $white;
+}
+
+h2 {
+	color: #444444;
+}
+
+h3 {
+	color: #444444;
+}
+
+p {
+	color: #4B646A;
+}
+
+a {
+	color: $voilet_blue;
+
+	&:hover {
+		color: $voilet_dark;
+	}
+}

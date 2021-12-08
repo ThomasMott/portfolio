@@ -1,0 +1,27 @@
+@import '../home';
+
+section {
+
+	.main-title {
+
+		span {
+			color: $pink_dark;
+		}
+
+		a {
+			color: $cyan_light;
+
+			&:hover {
+				color: $voilet_blue;
+			}
+		}
+	}
+}
+
+.background {
+
+	.background-magic {
+		background-color: $black_jet;
+	}
+}
+

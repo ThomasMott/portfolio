@@ -1,0 +1,14 @@
+@import '../dark-mode';
+
+.a-button {
+
+	border: $border-medium;
+	color:$grey_slate;
+	background-color: $white_off;
+
+	&:hover {
+		color:$white;
+		background-color: $grey_slate;
+	}
+}
+

@@ -1,0 +1,25 @@
+.a-button {
+	display:inline-block;
+	padding:2px 4px;
+	border: $border-medium;
+	margin: 16px 0 32px;
+	border-radius: $radius_sm;
+	font-size: 14px;
+	box-sizing: border-box;
+	color:$grey_slate;
+	text-align:center;
+	transition: all 0.2s;
+	background-color: $white_off;
+
+	&:hover {
+		color:$white;
+		background-color: $grey_slate;
+		cursor: pointer;
+	}
+}
+.theme {
+	position: fixed;
+	top: 64px;
+	right: 64px;
+	z-index: 20000;
+}

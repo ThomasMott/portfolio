@@ -1,0 +1,51 @@
+@import '../inner';
+
+body {
+
+	&.inner {
+		background-color: $black_jet;
+
+		section {
+
+			&.bg {
+				background-color: #ffdff82b;
+			}
+
+			.title {
+				color: $white;
+			}
+
+			.sec-title {
+				color: $white;
+			}
+
+			.rec-title {
+				color: $white;
+			}
+
+			p, li {
+				color: $grey_light_1;
+			}
+
+			.grid {
+
+				.ul-f {
+
+					border: 1px solid $grey_light_2;
+
+
+					.hlght {
+						color: $grey_light_1;
+					}
+				}
+
+				.ul-s {
+
+					li{
+						border: 1px solid $grey_light_2;
+					}
+				}
+			}
+		}
+	}
+}
