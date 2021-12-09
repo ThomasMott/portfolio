@@ -1,4 +1,4 @@
-@import './variables';
+@import './dark/_variables.scss';
 
 @import './dark/_accessiblity.scss';
 @import './breadcrumbs';

@@ -25,13 +25,11 @@ function setThemeOnLoad() {
 //light theme
 function themeLight() {
 	document.querySelector('link[href="../css/dark.css"]').href = "../css/all.css";
-	document.getElementById("a-button-theme").innerHTML = 'Dark Mode';
 	localStorage.setItem('theme','light');
 };
 
 //light theme
 function themeDark() {
 	document.querySelector('link[href="../css/all.css"]').href = "../css/dark.css";
-	document.getElementById("a-button-theme").innerHTML = 'Light Mode';
 	localStorage.setItem('theme','dark');
 };

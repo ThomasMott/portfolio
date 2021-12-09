@@ -1,9 +1,9 @@
 @import '../filter';
 
 .btn {
-	border: 1px solid $black_jet;
-	background-color: $black_jet;
-	color: $white_off;
+	border: 1px solid $grey_light_1;
+	background-color: $grey_light_1;
+	color: $black_jet;
 
 	&:hover {
 		background-color: $pink_candy;
@@ -12,8 +12,8 @@
 	}
 
 	&.active {
-		background-color: $white;
+		background-color: $black_jet;
 		border: 1px solid $grey_med;
-		color: $grey_concrete;
+		color: $grey_light_2;
 	}
 }

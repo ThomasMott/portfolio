@@ -8,7 +8,7 @@ body {
 		section {
 
 			&.bg {
-				background-color: #ffdff82b;
+				background-color: #a6a6a62b;
 			}
 
 			.title {
@@ -24,14 +24,14 @@ body {
 			}
 
 			p, li {
-				color: $grey_light_1;
+				color: $grey_light_2;
 			}
 
 			.grid {
 
 				.ul-f {
 
-					border: 1px solid $grey_light_2;
+					border: 1px solid $grey_med;
 
 
 					.hlght {

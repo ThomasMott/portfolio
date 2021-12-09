@@ -2,13 +2,14 @@
 
 .a-button {
 
-	border: $border-medium;
-	color:$grey_slate;
-	background-color: $white_off;
+	background-color: $grey_light_2;
+
+	img {
+		filter: none;
+	}
 
 	&:hover {
-		color:$white;
-		background-color: $grey_slate;
+		background-color: $white;
 	}
 }
 
