@@ -1,0 +1,32 @@
+.a-button {
+
+	padding: 8px;
+	border-radius: $radius_full;
+	transition: all 0.4s;
+	background-color: $black_jet;
+	line-height: 0;
+
+	img {
+
+		filter: contrast(0)brightness(10);
+	}
+
+	&:hover {
+
+		background-color: $black_dusty;
+		cursor: pointer;
+	}
+}
+
+.theme {
+
+	display: none;
+
+	@media (min-width: $breakpoint-sm) {
+		display: unset;
+		position: fixed;
+		bottom: 16px;
+		right: 16px;
+		z-index: 10;
+	}
+}

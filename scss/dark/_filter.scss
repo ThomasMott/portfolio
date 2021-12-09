@@ -1,0 +1,19 @@
+@import '../filter';
+
+.btn {
+	border: 1px solid $grey_light_1;
+	background-color: $grey_light_1;
+	color: $black_jet;
+
+	&:hover {
+		background-color: $pink_candy;
+		border: 1px solid $pink_candy;
+		color: $black_dusty;
+	}
+
+	&.active {
+		background-color: $black_jet;
+		border: 1px solid $grey_med;
+		color: $grey_light_2;
+	}
+}

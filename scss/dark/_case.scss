@@ -1,0 +1,19 @@
+@import '../case';
+
+.case-img {
+	border: 1px solid $grey_med;
+}
+
+section {
+
+	.case {
+
+		figure {
+
+			figcaption {
+				color: $grey_med;
+			}
+		}
+	}
+}
+

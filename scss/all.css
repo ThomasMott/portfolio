@@ -4,6 +4,7 @@
 @import './breadcrumbs';
 @import './case';
 @import './cont';
+@import './_dark-mode.scss';
 @import './filter';
 @import './_forms.scss';
 @import './grid';
