@@ -22,7 +22,7 @@ section {
 			figcaption {
 				font-style: italic;
 				color: $grey_stone;
-				padding: 0 32px;
+				padding: 0 16px;
 				margin: 16px 0 32px 0;
 				font-size: 15px;
 				line-height: 23px;
@@ -33,7 +33,7 @@ section {
 			font-size: 18px;
 			margin: 16px 0;
 			line-height: 28px;
-			padding: 0 32px;
+			padding: 0 16px;
 
 			a {
 				display: inline;
@@ -43,7 +43,25 @@ section {
 		}
 
 		h2 {
-			padding: 0 32px;
+			padding: 0 16px;
+		}
+
+		@media(min-width: $breakpoint-sm) {
+
+			figure {
+
+				figcaption {
+					padding: 0 32px;
+				}
+			}
+
+			p, a {
+				padding: 0 32px;
+			}
+
+			h2 {
+				padding: 0 32px;
+			}
 		}
 	}
 }
