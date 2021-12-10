@@ -19,12 +19,11 @@ npm install
 
 To gulp the scss into a clean css file:
 ```
-cd into root folder and run either command below:
+cd into root folder and run:
 ```
-npm run scss
+gulp
 ```
-gulp sass
-```
+This will automatically watch and compile all.css and dark.css when files are saved in the /scss folder
 
 ## Usage
 

@@ -7,7 +7,7 @@ var cleanCss = require('gulp-clean-css');
 var autoprefixer = require('gulp-autoprefixer');
 var { task, series } = require("gulp");
 
-var SCSS_SRC = "./scss/*.scss";
+var SCSS_SRC = "./scss/**/*";
 var SCSS_DEST = "./css";
 
 function compile_scss() {
