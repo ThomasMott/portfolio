@@ -1,120 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
-  	<meta name="author" content="Thomas Mott">
-    <title>Project | ArmourSlice</title>
-	<meta name="description" content="Working with C.K tools I was taked with improving their current line of armourslice SWA cable strippers.">
-    <link rel="stylesheet" href="../css/all.css">
-    <link rel="icon" href="../static/images/favicon.ico">
-</head>
-<body class="inner">
-	<a href="#main" class="access-skip" tabindex="1">Skip to main content</a>
-	<section class="nav-out" aria-label="Main Navigation">
-		<div class="nav">
-			<nav>
-				<ul class="nav-links">
-					<li><a href="./">projects</a></li>
-					<li><a href="../about/">about</a></li>
-					<li><a href="../contact/">contact</a></li>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+		<meta name="author" content="Thomas Mott" />
+		<title>Project | ArmourSlice</title>
+		<meta
+			name="description"
+			content="Working with C.K tools I was taked with improving their current line of armourslice SWA cable strippers."
+		/>
+		<link rel="icon" href="../static/images/favicon.ico" />
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+			rel="stylesheet"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="mx-6">
+		<a
+			href="#main"
+			class="fixed opacity-0 top-0 left-0 focus:opacity-100"
+			tabindex="1"
+			>Skip to main content</a
+		>
+		<nav>
+			<div
+				class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4 border-pink-100 border-b-4"
+			>
+				<ul
+					class="text-gray-500 flex flex-wrap justify-center items-center"
+				>
+					<li>
+						<a href="/" class="mr-4 hover:underline md:mr-6"
+							>Home</a
+						>
+					</li>
+					<li>
+						<a href="/about/" class="mr-4 hover:underline md:mr-6"
+							>About</a
+						>
+					</li>
+					<li>
+						<a
+							href="/projects/"
+							class="mr-4 hover:underline md:mr-6"
+							>Projects</a
+						>
+					</li>
 				</ul>
-			</nav>
-			<a href="../">
-				<div class="eye-all">
-					<div class="eye">
-						<div class="ball" id="ball"></div>
+				<div class="flex items-center">
+					<a
+						href="mailto:ThomasNMott1997@gmail.com"
+						download=""
+						class="mr-6 text-sm hover:underline text-gray-500"
+						>thomasnmott1997@gmail.com</a
+					>
+					<div class="flex gap-2">
+						<a
+							class="contrast-0 hover:contrast-100"
+							href="https://www.instagram.com/xtmto/"
+							><img
+								class="soc-svg"
+								src="../static/images/instagram.svg"
+						/></a>
+						<a
+							class="contrast-0 hover:contrast-100"
+							href="https://www.linkedin.com/in/thomas-mott-57348b150/"
+							><img
+								class="soc-svg"
+								src="../static/images/linked-in.svg"
+						/></a>
+						<a
+							class="contrast-0 hover:contrast-100"
+							href="https://github.com/ThomasMott"
+							><img
+								class="soc-svg"
+								src="../static/images/github.svg"
+						/></a>
 					</div>
 				</div>
-			</a>
-			<div class="social">
-				<a href="https://www.instagram.com/xtmto/"><img class="soc-svg" src="../static/images/instagram.svg"></a>
-				<a href="https://www.linkedin.com/in/thomas-mott-57348b150/"><img class="soc-svg" src="../static/images/linked-in.svg"></a>
-				<a href="https://github.com/ThomasMott"><img class="soc-svg" src="../static/images/github.svg"></a>
 			</div>
-		</div>
-	</section>
-	<section id="main">
-		<div class="grid">
-			<p>Major project - 2018</p>
-			<h1 class="title">ArmourSlice</h1>
-			<p>TLDR: <em>Working with C.K tools I was tasked with improving their current line of armourslice SWA cable strippers.</em></p>
-			<p class="bc"><a href="./">projects</a> › <a href="./armourslice.html">armourslice</a></p>
-			<ul class="ul-s">
-				<li>Product Design</li>
-				<li>Graphic Design</li>
-				<li>Prototyping</li>
-				<li>User Interviews</li>
-			</ul>
-		</div>
-	</section>
-	<section>
-		<div class="grid">
-			<article class="case">
-				<h2 class="sec-title">Approach</h2>
-				<p>The design process followed the double diamond model, the biggest focus for this project was improving the usability and efficiency of the current armourslice cable stripping tool. I also needed to ensure the final product was feasible for mass manufacture.</p>
-				<figure>
-					<img class="case-img" src="../static/images/as/as-e.jpg" alt="user testing">
-					<figcaption>Initial concept sketches</figcaption>
+		</nav>
+		<section id="main" class="py-20 max-w-6xl m-auto">
+			<p class="text-gray-500">Live project - 2018</p>
+			<h1 class="text-3xl mt-3 mb-6 font-semibold text-gray-700">
+				ArmourSlice
+			</h1>
+			<p class="my-6 text-gray-500">
+				TLDR:
+				<em
+					>Working with C.K tools I was tasked with improving their
+					current line of armourslice SWA cable strippers.</em
+				>
+			</p>
+			<div class="border-pink-100 border-4 rounded-lg p-10 mb-10">
+				<ul class="flex flex-wrap gap-4">
+					<li
+						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+					>
+						Product Design
+					</li>
+					<li
+						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+					>
+						Graphics
+					</li>
+					<li
+						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+					>
+						Branding
+					</li>
+					<li
+						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+					>
+						Prototyping
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="pb-20 max-w-4xl m-auto">
+			<article>
+				<h2 class="text-lg font-semibold text-gray-700 m-6">
+					Approach
+				</h2>
+				<p class="text-gray-500 m-6">
+					The design process followed the double diamond model, the
+					biggest focus for this project was improving the usability
+					and efficiency of the current armourslice cable stripping
+					tool. I also needed to ensure the final product was feasible
+					for mass manufacture.
+				</p>
+				<figure class="my-6">
+					<img
+						class="h-80 w-full object-cover border border-gray-200 rounded-xl"
+						src="../static/images/as/as-e.jpg"
+						alt="user testing"
+					/>
+					<figcaption class="text-gray-400 m-2">
+						Initial concept sketches
+					</figcaption>
 				</figure>
-				<p>I created a range of concepts using a refined success criteria. The tool was required to fit into confined work spaces  while remaining ergonomically sound. Through questionnaires, interviews and prototype testing I refined the idea to maximise usabilty.</p>
-				<figure>
-					<img class="case-img" src="../static/images/as/as.jpg" alt="sketches for ripple project">
-					<figcaption>Keyshot renders of final deliverable</figcaption>
+				<p class="text-gray-500 m-6">
+					I created a range of concepts using a refined success
+					criteria. The tool was required to fit into confined work
+					spaces while remaining ergonomically sound. Through
+					questionnaires, interviews and prototype testing I refined
+					the idea to maximise usabilty.
+				</p>
+				<figure class="my-6">
+					<img
+						class="h-full w-full object-cover rounded-xl"
+						src="../static/images/as/as.jpg"
+						alt="sketches for ripple project"
+					/>
+					<figcaption class="text-gray-400 m-2">
+						Keyshot renders of final deliverable
+					</figcaption>
 				</figure>
-				<h2 class="sec-title">Goals</h2>
-				<p>The goal was to improve the function and efficiency of the C.K tools' current line of armourslice SWA cable strippers.</p>
-				<h2 class="sec-title">Outcome</h2>
-				<p>The research, specification and final concept were taken for development and manufacture by the C.K product development team.</p>
-				<figure>
-					<img class="case-img" src="../static/images/as/as-1.jpg" alt="ripple product mockup">
-					<img class="case-img" src="../static/images/as/as-2.jpg" alt="ripple 3d model">
-					<figcaption>Keyshot renders of final deliverable</figcaption>
+				<h2 class="text-lg font-semibold text-gray-700 m-6">Goals</h2>
+				<p class="text-gray-500 m-6">
+					The goal was to improve the function and efficiency of the
+					C.K tools' current line of armourslice SWA cable strippers.
+				</p>
+				<h2 class="text-lg font-semibold text-gray-700 m-6">Outcome</h2>
+				<p class="text-gray-500 m-6">
+					The research, specification and final concept were taken for
+					development and manufacture by the C.K product development
+					team.
+				</p>
+				<figure class="my-6">
+					<img
+						class="mb-6 h-full w-full object-cover rounded-xl"
+						src="../static/images/as/as-1.jpg"
+						alt="ripple product mockup"
+					/>
+					<img
+						class="h-full w-full object-cover rounded-xl"
+						src="../static/images/as/as-2.jpg"
+						alt="ripple 3d model"
+					/>
+					<figcaption class="text-gray-400 m-2">
+						Keyshot renders of final deliverable
+					</figcaption>
 				</figure>
 			</article>
-		</div>
-	</section>
-	<section class="bg">
-		<div class="grid">
-			<div class="row port">
-				<div class="col-12-xs col-12-sm col-4-md">
-					<a href="./ripple.html">
-						<div class="port-out" data-tooltip="down" aria-label="ripple">
-							<div class="port-img">
-								<img src="../static/images/rp/rp-2.jpg" alt="exploded view of ripple">
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-12-xs col-12-sm col-4-md col-4">
-					<a href="./ralphlauren.html">
-						<div class="port-out" data-tooltip="down" aria-label="ralph lauren">
-							<div class="port-img">
-								<img src="../static/images/rl/rl.jpg" alt="ralph lauren website on website">
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-12-xs col-12-sm col-4-md col-4">
-					<a href="./smartsource.html">
-						<div class="port-out" data-tooltip="down" aria-label="smartsource">
-							<div class="port-img">
-								<img src="../static/images/ss/ss.jpg" alt="smart source app on mobile">
-							</div>
-						</div>
-					</a>
-				</div>
+		</section>
+		<footer class="border-grey-100 border-t p-8">
+			<div class="mx-auto max-w-screen-xl text-center">
+				<ul
+					class="flex flex-wrap justify-center items-center text-gray-400"
+				>
+					<li>
+						<a href="/" class="mr-4 hover:underline md:mr-6"
+							>Home</a
+						>
+					</li>
+					<li>
+						<a href="/about" class="mr-4 hover:underline md:mr-6"
+							>About</a
+						>
+					</li>
+					<li>
+						<a href="/projects" class="mr-4 hover:underline md:mr-6"
+							>Projects</a
+						>
+					</li>
+				</ul>
 			</div>
-		</div>
-    </section>
-	<section>
-		<div class="grid">
-			<p class="git">View my repository for this website on <a style="display: inline;" href="https://github.com/ThomasMott/portfolio" download>Github.</a></p>
-		</div>
-	</section>
-	<div><a class="a-button theme" id="a-button-theme"><img src="../static/images/brightness.svg"></a></div>
-	<script src="../js/darkmode.js"></script>
-	<script data-goatcounter="https://portfolio-ws.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-</body>
+		</footer>
+	</body>
 </html>

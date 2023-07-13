@@ -1,160 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
-	<meta name="author" content="Thomas Mott">
-	<title>Projects | My favourite projects</title>
-	<meta name="description" content="Welcome to my portfolio, Here are a few of my favourite projects that I have worked on. I use human-centred solutions to improve everyday experiences.">
-	<link rel="stylesheet" href="../css/all.css">
-	<link rel="icon" href="../static/images/favicon.ico">
-</head>
-<body class="inner">
-	<a href="#main" class="access-skip" tabindex="1">Skip to main content</a>
-	<section class="nav-out" aria-label="Main Navigation">
-		<div class="nav">
-			<nav>
-				<ul class="nav-links">
-					<li><a id="current" href="./">projects</a></li>
-					<li><a href="../about/">about</a></li>
-					<li><a href="../contact/">contact</a></li>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+		<meta name="author" content="Thomas Mott" />
+		<title>Projects | My favourite projects</title>
+		<meta
+			name="description"
+			content="Welcome to my portfolio, Here are a few of my favourite projects that I have worked on. I use human-centred solutions to improve everyday experiences."
+		/>
+		<link rel="icon" href="../static/images/favicon.ico" />
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+			rel="stylesheet"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="mx-6">
+		<a
+			href="#main"
+			class="fixed opacity-0 top-0 left-0 focus:opacity-100"
+			tabindex="1"
+			>Skip to main content</a
+		>
+		<nav>
+			<div
+				class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4 border-pink-100 border-b-4"
+			>
+				<ul
+					class="text-gray-500 flex flex-wrap justify-center items-center"
+				>
+					<li>
+						<a href="/" class="mr-4 hover:underline md:mr-6"
+							>Home</a
+						>
+					</li>
+					<li>
+						<a href="/about/" class="mr-4 hover:underline md:mr-6"
+							>About</a
+						>
+					</li>
+					<li>
+						<a
+							href="/projects/"
+							class="mr-4 hover:underline md:mr-6"
+							>Projects</a
+						>
+					</li>
 				</ul>
-			</nav>
-			<a href="../">
-				<div class="eye-all">
-					<div class="eye">
-						<div class="ball" id="ball"></div>
+				<div class="flex items-center">
+					<a
+						href="mailto:ThomasNMott1997@gmail.com"
+						download=""
+						class="mr-6 text-sm hover:underline text-gray-500"
+						>thomasnmott1997@gmail.com</a
+					>
+					<div class="flex gap-2">
+						<a
+							class="contrast-0 hover:contrast-100"
+							href="https://www.instagram.com/xtmto/"
+							><img
+								class="soc-svg"
+								src="../static/images/instagram.svg"
+						/></a>
+						<a
+							class="contrast-0 hover:contrast-100"
+							href="https://www.linkedin.com/in/thomas-mott-57348b150/"
+							><img
+								class="soc-svg"
+								src="../static/images/linked-in.svg"
+						/></a>
+						<a
+							class="contrast-0 hover:contrast-100"
+							href="https://github.com/ThomasMott"
+							><img
+								class="soc-svg"
+								src="../static/images/github.svg"
+						/></a>
 					</div>
 				</div>
-			</a>
-			<div class="social">
-				<a href="https://www.instagram.com/xtmto/"><img class="soc-svg" src="../static/images/instagram.svg"></a>
-				<a href="https://www.linkedin.com/in/thomas-mott-57348b150/"><img class="soc-svg" src="../static/images/linked-in.svg"></a>
-				<a href="https://github.com/ThomasMott"><img class="soc-svg" src="../static/images/github.svg"></a>
 			</div>
-		</div>
-	</section>
-	<section id="main">
-		<div class="grid">
-			<p>Projects</p>
-			<h1 class="title">Human-centred solutions to improve everyday experiences.</h1>
-			<p>Here are a few of my favourite projects that I have worked on.</p>
-			<p>Click the buttons below to filter by category.</p>
-		</div>
-	</section>
-	<section>
-		<div class="grid">
-			<div class="row port">
-				<div id="myBtnContainer">
-					<button class="btn active" onclick="filterSelection('all')">All projects</button>
-					<button class="btn" onclick="filterSelection('ui')">UI design</button>
-					<button class="btn" onclick="filterSelection('ux')">UX design</button>
-					<button class="btn" onclick="filterSelection('de')">Web development</button>
-					<button class="btn" onclick="filterSelection('pd')">Product design</button>
-					<button class="btn" onclick="filterSelection('gd')">Graphic design</button>
-				</div>
-				<div class="col-12-xs col-12-sm col-4-md col-4 fd ui ux gd">
-					<a href="./smartsource.html">
-						<div class="port-out" data-tooltip="down" aria-label="SmartSource">
+		</nav>
+		<section id="main" class="py-20 max-w-6xl m-auto">
+			<p class="text-sm pb-2 text-gray-400">Featured Projects</p>
+			<h1 class="text-2xl text-black pb-6">
+				Human-centred solutions to improve everyday experiences.
+			</h1>
+			<p class="pb-6 text-gray-500">
+				Click the buttons below to filter by category.
+			</p>
+			<div id="myBtnContainer" class="flex flex-wrap gap-4 pb-20">
+				<button
+					class="btn bg-pink-100 py-2 px-4 rounded-md bg-white"
+					onclick="filterSelection('all')"
+				>
+					All projects
+				</button>
+				<button
+					class="btn bg-pink-100 py-2 px-4 rounded-md"
+					onclick="filterSelection('ui')"
+				>
+					UI design
+				</button>
+				<button
+					class="btn bg-pink-100 py-2 px-4 rounded-md"
+					onclick="filterSelection('ux')"
+				>
+					UX design
+				</button>
+				<button
+					class="btn bg-pink-100 py-2 px-4 rounded-md"
+					onclick="filterSelection('de')"
+				>
+					Web development
+				</button>
+				<button
+					class="btn bg-pink-100 py-2 px-4 rounded-md"
+					onclick="filterSelection('pd')"
+				>
+					Product design
+				</button>
+				<button
+					class="btn bg-pink-100 py-2 px-4 rounded-md"
+					onclick="filterSelection('gd')"
+				>
+					Graphic design
+				</button>
+			</div>
+			<div
+				class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 pb-20"
+			>
+				<div class="fd de ui ux gd">
+					<a href="./mojeek.html" title="Mojeek">
+						<div
+							class="port-out"
+							data-tooltip="down"
+							aria-label="Mojeek"
+						>
 							<div class="port-img">
-								<img src="../static/images/ss/ss.jpg" alt="smart source app on mobile">
+								<img
+									class="opacity-80 h-80 object-cover w-full rounded-lg hover:scale-110 hover:opacity-100 duration-300"
+									src="../static/images/mj/mj-1.jpg"
+									alt="mojeek website on laptop"
+								/>
 							</div>
 						</div>
 					</a>
 				</div>
-				<div class="col-12-xs col-12-sm col-4-md col-4 fd ui ux gd">
-					<a href="./petlet.html">
-						<div class="port-out" data-tooltip="down" aria-label="Petlet">
+				<div class="fd de ui ux gd">
+					<a href="./foxgibbon.html" title="FoxGibbon">
+						<div
+							class="port-out"
+							data-tooltip="down"
+							aria-label="FoxGibbon"
+						>
 							<div class="port-img">
-								<img src="../static/images/pl/pl.jpg" alt="petlet app on mobile">
+								<img
+									class="opacity-80 h-80 object-cover w-full rounded-lg hover:scale-110 hover:opacity-100 duration-300"
+									src="../static/images/fg/fg.png"
+									alt="FoxGibbon website on iphone"
+								/>
 							</div>
 						</div>
 					</a>
 				</div>
-				<div class="col-12-xs col-12-sm col-4-md col-4 fd ui ux">
-					<a href="./ralphlauren.html">
-						<div class="port-out" data-tooltip="down" aria-label="Ralph Lauren">
+				<div class="fd ui ux gd">
+					<a href="./smartsource.html" title="SmartSource">
+						<div
+							class="port-out"
+							data-tooltip="down"
+							aria-label="SmartSource"
+						>
 							<div class="port-img">
-								<img src="../static/images/rl/rl.jpg" alt="ralph lauren website on website">
+								<img
+									class="opacity-80 h-80 object-cover w-full rounded-lg hover:scale-110 hover:opacity-100 duration-300"
+									src="../static/images/ss/ss.jpg"
+									alt="smart source app on mobile"
+								/>
 							</div>
 						</div>
 					</a>
 				</div>
-				<div class="col-12-xs col-12-sm col-4-md col-4 fd de ui ux gd">
-					<a href="./algopigm.html">
-						<div class="port-out" data-tooltip="down" aria-label="Algopigm">
+				<div class="fd ui ux gd">
+					<a href="./petlet.html" title="Petlet">
+						<div
+							class="port-out"
+							data-tooltip="down"
+							aria-label="Petlet"
+						>
 							<div class="port-img">
-								<img src="../static/images/ap/ap.jpg" alt="algopigm website on laptop">
+								<img
+									class="opacity-80 h-80 object-cover w-full rounded-lg hover:scale-110 hover:opacity-100 duration-300"
+									src="../static/images/pl/pl.jpg"
+									alt="petlet app on mobile"
+								/>
 							</div>
 						</div>
 					</a>
 				</div>
-				<div class="col-12-xs col-12-sm col-4-md col-4 fd ux">
-					<a href="./genshare.html">
-						<div class="port-out" data-tooltip="down" aria-label="GenShare">
+				<div class="fd ui ux">
+					<a href="./ralphlauren.html" title="Ralph Lauren">
+						<div
+							class="port-out"
+							data-tooltip="down"
+							aria-label="Ralph Lauren"
+						>
 							<div class="port-img">
-								<img src="../static/images/sd/sd-cp.png" alt="genshare">
+								<img
+									class="opacity-80 h-80 object-cover w-full rounded-lg hover:scale-110 hover:opacity-100 duration-300"
+									src="../static/images/rl/rl.jpg"
+									alt="ralph lauren website on website"
+								/>
 							</div>
 						</div>
 					</a>
 				</div>
-				<div class="col-12-xs col-12-sm col-4-md col-4 fd gd">
-					<a href="./cdm.html">
-						<div class="port-out" data-tooltip="down" aria-label="cdm">
+				<div class="fd de ui ux gd">
+					<a href="./algopigm.html" title="Algopigm">
+						<div
+							class="port-out"
+							data-tooltip="down"
+							aria-label="Algopigm"
+						>
 							<div class="port-img">
-								<img src="../static/images/cd/cd-cp.jpg" alt="cdm logo">
+								<img
+									class="opacity-80 h-80 object-cover w-full rounded-lg hover:scale-110 hover:opacity-100 duration-300"
+									src="../static/images/ap/ap.jpg"
+									alt="algopigm website on laptop"
+								/>
 							</div>
 						</div>
 					</a>
 				</div>
-				<div class="col-12-xs col-12-sm col-4-md col-4 fd ui ux gd">
-					<a href="./recoll.html">
-						<div class="port-out" data-tooltip="down" aria-label="Recoll">
+				<div class="fd ux">
+					<a href="./genshare.html" title="GenShare">
+						<div
+							class="port-out"
+							data-tooltip="down"
+							aria-label="GenShare"
+						>
 							<div class="port-img">
-								<img src="../static/images/rc/rc.jpg" alt="recoll app on mobile">
+								<img
+									class="opacity-80 h-80 object-cover w-full rounded-lg hover:scale-110 hover:opacity-100 duration-300"
+									src="../static/images/sd/sd-cp.png"
+									alt="genshare"
+								/>
 							</div>
 						</div>
 					</a>
 				</div>
-				<div class="col-12-xs col-12-sm col-4-md col-4 fd pd">
-					<a href="./armourslice.html">
-						<div class="port-out" data-tooltip="down" aria-label="ArmourSlice">
+				<div class="fd gd">
+					<a href="./cdm.html" title="Coalition of Digital Marketing">
+						<div
+							class="port-out"
+							data-tooltip="down"
+							aria-label="cdm"
+						>
 							<div class="port-img">
-								<img src="../static/images/as/as-2.jpg" alt="exploded view of armour slice">
+								<img
+									class="opacity-80 h-80 object-cover w-full rounded-lg hover:scale-110 hover:opacity-100 duration-300"
+									src="../static/images/cd/cd-cp.jpg"
+									alt="cdm logo"
+								/>
 							</div>
 						</div>
 					</a>
 				</div>
-				<div class="col-12-xs col-12-sm col-4-md col-4 fd pd">
-					<a href="./ripple.html">
-						<div class="port-out" data-tooltip="down" aria-label="Ripple">
+				<div class="fd ui ux gd">
+					<a href="./recoll.html" title="Recoll">
+						<div
+							class="port-out"
+							data-tooltip="down"
+							aria-label="Recoll"
+						>
 							<div class="port-img">
-								<img src="../static/images/rp/rp-2.jpg" alt="exploded view of ripple">
+								<img
+									class="opacity-80 h-80 object-cover w-full rounded-lg hover:scale-110 hover:opacity-100 duration-300"
+									src="../static/images/rc/rc.jpg"
+									alt="recoll app on mobile"
+								/>
 							</div>
 						</div>
 					</a>
 				</div>
-				<div class="col-12-xs col-12-sm col-4-md col-4 fd de ui ux gd">
-					<a href="./mojeek.html">
-						<div class="port-out" data-tooltip="down" aria-label="Mojeek">
+				<div class="fd pd">
+					<a href="./armourslice.html" title="ArmourSlice">
+						<div
+							class="port-out"
+							data-tooltip="down"
+							aria-label="ArmourSlice"
+						>
 							<div class="port-img">
-								<img src="../static/images/mj/mj-1.jpg" alt="mojeek website on laptop">
+								<img
+									class="opacity-80 h-80 object-cover w-full rounded-lg hover:scale-110 hover:opacity-100 duration-300"
+									src="../static/images/as/as-2.jpg"
+									alt="exploded view of armour slice"
+								/>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="fd pd">
+					<a href="./ripple.html" title="Ripple">
+						<div
+							class="port-out"
+							data-tooltip="down"
+							aria-label="Ripple"
+						>
+							<div class="port-img">
+								<img
+									class="opacity-80 h-80 object-cover w-full rounded-lg hover:scale-110 hover:opacity-100 duration-300"
+									src="../static/images/rp/rp-2.jpg"
+									alt="exploded view of ripple"
+								/>
 							</div>
 						</div>
 					</a>
 				</div>
 			</div>
-		</div>
-    </section>
-	<section>
-		<div class="grid">
-			<p class="git">View my repository for this website on <a style="display: inline;" href="https://github.com/ThomasMott/portfolio" download>Github.</a></p>
-		</div>
-	</section>
-	<div><a class="a-button theme" id="a-button-theme"><img src="../static/images/brightness.svg"></a></div>
-	<script src="../js/darkmode.js"></script>
-	<script data-goatcounter="https://portfolio-ws.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-</body>
-<script src='../js/filter.js'></script>
+		</section>
+		<footer class="border-grey-100 border-t p-8">
+			<div class="mx-auto max-w-screen-xl text-center">
+				<ul
+					class="flex flex-wrap justify-center items-center text-gray-400"
+				>
+					<li>
+						<a href="/" class="mr-4 hover:underline md:mr-6"
+							>Home</a
+						>
+					</li>
+					<li>
+						<a href="/about" class="mr-4 hover:underline md:mr-6"
+							>About</a
+						>
+					</li>
+					<li>
+						<a href="/projects" class="mr-4 hover:underline md:mr-6"
+							>Projects</a
+						>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+	<script src="../js/filter.js"></script>
 </html>

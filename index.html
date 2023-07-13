@@ -1,50 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Thomas Mott">
-    <title>Thomas Mott | UX UI Designer & Developer</title>
-	<meta name="description" content="Welcome to my portfolio, I am a UX UI Designer & Developer experienced in providing human-centred solutions to improve everyday experiences.">
-    <link rel="stylesheet" href="./css/all.css">
-    <link rel="icon" href="./static/images/favicon.ico">
-</head>
-<body>
-	<a href="#main" class="access-skip" tabindex="1">Skip to main content</a>
-	<section class="nav-out home" aria-label="Main Navigation">
-		<div class="nav">
-			<nav>
-				<ul class="nav-links">
-					<li><a href="./projects/">projects</a></li>
-					<li><a href="./about/">about</a></li>
-					<li><a href="./contact/">contact</a></li>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Thomas Mott" />
+		<title>Thomas Mott | UX UI Designer & Developer</title>
+		<meta
+			name="description"
+			content="Welcome to my portfolio, I am a UX UI Designer & Developer experienced in providing human-centred solutions to improve everyday experiences."
+		/>
+		<link rel="icon" href="./static/images/favicon.ico" />
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+			rel="stylesheet"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="mx-6">
+		<a href="#main" class="hidden" tabindex="1">Skip to main content</a>
+		<nav>
+			<div
+				class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4 border-pink-100 border-b-4"
+			>
+				<ul
+					class="text-gray-500 flex flex-wrap justify-center items-center"
+				>
+					<li>
+						<a href="/" class="mr-4 hover:underline md:mr-6"
+							>Home</a
+						>
+					</li>
+					<li>
+						<a href="/about/" class="mr-4 hover:underline md:mr-6"
+							>About</a
+						>
+					</li>
+					<li>
+						<a
+							href="/projects/"
+							class="mr-4 hover:underline md:mr-6"
+							>Projects</a
+						>
+					</li>
 				</ul>
-			</nav>
-			<a href="./">
-				<div class="eye-all">
-					<div class="eye">
-						<div class="ball" id="ball"></div>
+				<div class="flex items-center">
+					<a
+						href="mailto:ThomasNMott1997@gmail.com"
+						download=""
+						class="mr-6 text-sm hover:underline text-gray-500"
+						>thomasnmott1997@gmail.com</a
+					>
+					<div class="flex gap-2">
+						<a
+							class="contrast-0 hover:contrast-100"
+							href="https://www.instagram.com/xtmto/"
+							><img
+								class="soc-svg"
+								src="../static/images/instagram.svg"
+						/></a>
+						<a
+							class="contrast-0 hover:contrast-100"
+							href="https://www.linkedin.com/in/thomas-mott-57348b150/"
+							><img
+								class="soc-svg"
+								src="../static/images/linked-in.svg"
+						/></a>
+						<a
+							class="contrast-0 hover:contrast-100"
+							href="https://github.com/ThomasMott"
+							><img
+								class="soc-svg"
+								src="../static/images/github.svg"
+						/></a>
 					</div>
 				</div>
-			</a>
-			<div class="social">
-				<a href="https://www.instagram.com/xtmto/"><img class="soc-svg" src="./static/images/instagram.svg"></a>
-				<a href="https://www.linkedin.com/in/thomas-mott-57348b150/"><img class="soc-svg" src="./static/images/linked-in.svg"></a>
-				<a href="https://github.com/ThomasMott"><img class="soc-svg" src="./static/images/github.svg"></a>
 			</div>
-		</div>
-    </section>
-    <section id="main">
-		<div class="main-title">
-            <h1><span>Hi</span>. I'm <span>Tom</span>.</h1>
-			<h1>I'm an experienced</h1> <h1><span>UX / UI</span> Designer</h1>
-			<h1>& <span>Frontend</span> Developer.</h1>
-			<a href="./projects/index.html">Browse my work</a>
-		</div>
-		<div id="background" class="background"></div>
-    </section>
-	<script src='./js/index.js'></script>
-	<script src='./js/eye.js'></script>
-	<script data-goatcounter="https://portfolio-ws.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+		</nav>
+
+		<section id="main" class="cursor-pointer">
+			<div
+				class="fixed left-1/2 w-full -translate-x-1/2 pt-20 py-4 text-center max-w-2xl bg-white m-auto z-10"
+			>
+				<h1 class="text-3xl pb-2">Hi, I'm Tom.</h1>
+				<h2 class="text-xl text-gray-500">
+					I'm and experienced Lead UX/UI Designer and Web Developer.
+				</h2>
+			</div>
+			<div id="background" class="z-0 background"></div>
+		</section>
+		<script src="./js/index.js"></script>
 	</body>
 </html>
