@@ -11,13 +11,14 @@
 			content="I worked on a 3 month industrial project with the company Tails.com.The research based project focused on how to reduce the struggles of multi-species pet owners. I assisted as part of a research team team with a design and creativity led approach. During this time I was responsible for most aspects of the visual deliverables."
 		/>
 		<link rel="icon" href="../static/images/favicon.ico" />
+		<link rel="stylesheet" href="../css/style.css" />
 		<link
 			href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
 			rel="stylesheet"
 		/>
 		<script src="https://cdn.tailwindcss.com"></script>
 	</head>
-	<body class="mx-6">
+	<body class="mx-6 bg-rose-50">
 		<a
 			href="#main"
 			class="fixed opacity-0 top-0 left-0 focus:opacity-100"
@@ -26,137 +27,134 @@
 		>
 		<nav>
 			<div
-				class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4 border-pink-100 border-b-4"
+				class="navbar mx-auto max-w-screen-xl p-4 border-slate-800 border-b-4"
 			>
-				<ul
-					class="text-gray-500 flex flex-wrap justify-center items-center"
-				>
-					<li>
-						<a href="../" class="mr-4 hover:underline md:mr-6"
-							>Home</a
-						>
-					</li>
-					<li>
-						<a href="../about/" class="mr-4 hover:underline md:mr-6"
-							>About</a
-						>
-					</li>
-					<li>
-						<a href="./" class="mr-4 hover:underline md:mr-6"
-							>Projects</a
-						>
-					</li>
-				</ul>
-				<div class="flex items-center">
-					<a
-						href="mailto:ThomasNMott1997@gmail.com"
-						download=""
-						class="mr-6 text-sm hover:underline text-gray-500"
-						>thomasnmott1997@gmail.com</a
-					>
-					<div class="flex gap-2">
-						<a
-							class="contrast-0 hover:contrast-100"
-							href="https://www.instagram.com/xtmto/"
-							><img
-								class="soc-svg"
-								src="../static/images/instagram.svg"
-						/></a>
-						<a
-							class="contrast-0 hover:contrast-100"
-							href="https://www.linkedin.com/in/thomas-mott-57348b150/"
-							><img
-								class="soc-svg"
-								src="../static/images/linked-in.svg"
-						/></a>
-						<a
-							class="contrast-0 hover:contrast-100"
-							href="https://github.com/ThomasMott"
-							><img
-								class="soc-svg"
-								src="../static/images/github.svg"
-						/></a>
+				<div class="container nav-container">
+					<input class="checkbox" type="checkbox" name="" id="" />
+					<div class="hamburger-lines">
+						<span class="line line1"></span>
+						<span class="line line2"></span>
+						<span class="line line3"></span>
 					</div>
+					<div class="logo">
+						<a href="../" class="title">TM</a>
+					</div>
+					<ul class="menu-items m-auto pb-20">
+						<li><a href="../" class="title">TM</a></li>
+						<li><a href="../">home</a></li>
+						<li><a href="../about">about</a></li>
+						<li><a href=".">projects</a></li>
+						<li>
+							<a
+								href="mailto:ThomasNMott1997@gmail.com"
+								download=""
+								class="hover:underline text-slate-800"
+								>thomasnmott1997@gmail.com</a
+							>
+						</li>
+						<li>
+							<div class="pt-10 flex gap-2 justify-center">
+								<a
+									class="contrast-0 hover:contrast-100"
+									href="https://www.instagram.com/xtmto/"
+									><img
+										class="soc-svg"
+										src="../static/images/instagram.svg"
+								/></a>
+								<a
+									class="contrast-0 hover:contrast-100"
+									href="https://www.linkedin.com/in/thomas-mott-57348b150/"
+									><img
+										class="soc-svg"
+										src="../static/images/linked-in.svg"
+								/></a>
+								<a
+									class="contrast-0 hover:contrast-100"
+									href="https://github.com/ThomasMott"
+									><img
+										class="soc-svg"
+										src="../static/images/github.svg"
+								/></a>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</nav>
 		<section id="main" class="py-20 max-w-6xl m-auto">
-			<p class="text-gray-500">Live project - 2020</p>
-			<h1 class="text-3xl mt-3 mb-6 font-semibold text-gray-700">
-				Petlet
-			</h1>
-			<p class="my-6 text-gray-500">
-				TLDR:
-				<em
-					>I worked on a 3 month industrial project with Tails.com.The
-					research based project focused on reducing the struggles of
-					multi-species pet owners. As part of a research team, I
-					approached work with a design and creativity led eye. During
-					this time I was responsible for most aspects of the visual
-					deliverables.</em
-				>
-			</p>
-			<div class="border-pink-100 border-4 rounded-lg p-10 mb-10">
+			<p class="text-slate-500">Live project - 2020</p>
+			<h1 class="title mt-3 text-slate-800">Petlet</h1>
+			<div class="flex items-center mb-6">
+				<h2>TLDR:</h2>
+				<p class="text-xl pl-4 my-6 text-slate-800">
+					<em
+						>3 month industrial project with Tails.com. The research
+						based project focused on reducing the struggles of
+						multi-species pet owners. During this time I was
+						responsible for research conclusions and most aspects of
+						the visual deliverables.</em
+					>
+				</p>
+			</div>
+			<div class="article p-10 mb-10">
 				<ul class="flex flex-wrap gap-4">
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						UX Design
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						UI Design
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						Prototyping
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						Illustration
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						Graphics
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						Branding
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						Adobe Suite
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						Adobe XD
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						Figma
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						User Interviews
 					</li>
 				</ul>
 			</div>
 		</section>
-		<section class="pb-20 max-w-4xl m-auto">
+		<section class="article px-10 py-6 mb-20 max-w-3xl m-auto">
 			<article>
-				<h2 class="text-lg font-semibold text-gray-700 m-6">
-					Approach
-				</h2>
-				<p class="text-gray-500 m-6">
+				<h2 class="text-slate-800 m-6">Approach</h2>
+				<p class="text-slate-500 m-6">
 					The project followed the double diamond model. Emphasis was
 					placed on the research and discovery phase, to emphasise the
 					needs of the user. We made sure to use research processes
@@ -165,7 +163,7 @@
 				</p>
 				<figure class="my-6">
 					<img
-						class="h-full w-full object-cover rounded-xl"
+						class="h-full w-full object-cover"
 						src="../static/images/pl/pl-e.png"
 						alt="brainstorming on whiteboards"
 					/>
@@ -174,8 +172,8 @@
 						value to users
 					</figcaption>
 				</figure>
-				<h2 class="text-lg font-semibold text-gray-700 m-6">Process</h2>
-				<p class="text-gray-500 m-6">
+				<h2 class="text-slate-800 m-6">Process</h2>
+				<p class="text-slate-500 m-6">
 					As this was a project with a quick turnaround. We ran a week
 					long design sprint to iterate the app in collaboration with
 					users. This was an excellent experience to work in a fast
@@ -183,7 +181,7 @@
 				</p>
 				<figure class="my-6">
 					<img
-						class="border border-gray-200 h-full w-full object-cover rounded-xl"
+						class="border border-gray-200 h-full w-full object-cover"
 						src="../static/images/pl/pl-j.png"
 						alt="design sprint process"
 						style="height: auto"
@@ -192,8 +190,8 @@
 						Stages of the week-long design sprint
 					</figcaption>
 				</figure>
-				<h2 class="text-lg font-semibold text-gray-700 m-6">Goals</h2>
-				<p class="text-gray-500 m-6">
+				<h2 class="text-slate-800 m-6">Goals</h2>
+				<p class="text-slate-500 m-6">
 					The main goal of the project was to improve the lives of
 					people who are caring for multiple pets. As pets are
 					considered to be "part of the family", one of the biggest
@@ -203,7 +201,7 @@
 					also had to gather enough detail to produce a purposeful
 					design solution.
 				</p>
-				<p class="text-gray-500 m-6">
+				<p class="text-slate-500 m-6">
 					To ensure that all the information was thoroughly reviewed
 					personas, experience maps and storyboards were used. This
 					helped to ensure that the most meaningful insights, with the
@@ -211,7 +209,7 @@
 				</p>
 				<figure class="my-6">
 					<img
-						class="h-full w-full object-cover rounded-xl"
+						class="h-full w-full object-cover"
 						src="../static/images/pl/pl-em.png"
 						alt="experience map"
 						style="height: auto"
@@ -221,14 +219,14 @@
 						process
 					</figcaption>
 				</figure>
-				<p class="text-gray-500 m-6">
+				<p class="text-slate-500 m-6">
 					Prototypes were extensively tested with defined target
 					users. Users were encouraged to interact with the prototype
 					app, this helped to ascertain if it was intuitive to use.
 				</p>
 				<figure class="my-6">
 					<img
-						class="border border-gray-200 h-full w-full object-cover rounded-xl"
+						class="border border-gray-200 h-full w-full object-cover"
 						src="../static/images/pl/pl-1.png"
 						alt="wireframes of petlet app"
 						style="height: auto"
@@ -237,8 +235,8 @@
 						Low fidelity wireframe sketches
 					</figcaption>
 				</figure>
-				<h2 class="text-lg font-semibold text-gray-700 m-6">Outcome</h2>
-				<p class="text-gray-500 m-6">
+				<h2 class="text-slate-800 m-6">Outcome</h2>
+				<p class="text-slate-500 m-6">
 					The main goal of the project was to improve the lives of
 					people who are caring for multiple pets. Our team achieved
 					this by producing an app that linked key care components for
@@ -249,13 +247,13 @@
 				</p>
 				<figure class="my-6">
 					<img
-						class="mb-6 border border-gray-200 h-full w-full object-cover rounded-xl"
+						class="mb-6 border border-gray-200 h-full w-full object-cover"
 						src="../static/images/pl/pl-m.png"
 						alt="petlet app flow"
 						style="height: auto"
 					/>
 					<img
-						class="h-full w-full object-cover rounded-xl"
+						class="h-full w-full object-cover"
 						src="../static/images/pl/pl.jpg"
 						alt="petlet mobile mock up"
 					/>
@@ -271,8 +269,8 @@
 					class="flex flex-wrap justify-center items-center text-gray-400"
 				>
 					<li>
-						<a href="../" class="mr-4 hover:underline md:mr-6"
-							>Home</a
+						<a href="../" class="title mr-4 hover:underline md:mr-6"
+							>TM</a
 						>
 					</li>
 					<li>

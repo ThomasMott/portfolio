@@ -13,13 +13,14 @@
 			sharing valuable UX and UI design tips and information."
 		/>
 		<link rel="icon" href="../static/images/favicon.ico" />
+		<link rel="stylesheet" href="../css/style.css" />
 		<link
 			href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
 			rel="stylesheet"
 		/>
 		<script src="https://cdn.tailwindcss.com"></script>
 	</head>
-	<body class="mx-6">
+	<body class="mx-6 bg-rose-50">
 		<a
 			href="#main"
 			class="fixed opacity-0 top-0 left-0 focus:opacity-100"
@@ -28,126 +29,125 @@
 		>
 		<nav>
 			<div
-				class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4 border-pink-100 border-b-4"
+				class="navbar mx-auto max-w-screen-xl p-4 border-slate-800 border-b-4"
 			>
-				<ul
-					class="text-gray-500 flex flex-wrap justify-center items-center"
-				>
-					<li>
-						<a href="../" class="mr-4 hover:underline md:mr-6"
-							>Home</a
-						>
-					</li>
-					<li>
-						<a href="../about/" class="mr-4 hover:underline md:mr-6"
-							>About</a
-						>
-					</li>
-					<li>
-						<a href="./" class="mr-4 hover:underline md:mr-6"
-							>Projects</a
-						>
-					</li>
-				</ul>
-				<div class="flex items-center">
-					<a
-						href="mailto:ThomasNMott1997@gmail.com"
-						download=""
-						class="mr-6 text-sm hover:underline text-gray-500"
-						>thomasnmott1997@gmail.com</a
-					>
-					<div class="flex gap-2">
-						<a
-							class="contrast-0 hover:contrast-100"
-							href="https://www.instagram.com/xtmto/"
-							><img
-								class="soc-svg"
-								src="../static/images/instagram.svg"
-						/></a>
-						<a
-							class="contrast-0 hover:contrast-100"
-							href="https://www.linkedin.com/in/thomas-mott-57348b150/"
-							><img
-								class="soc-svg"
-								src="../static/images/linked-in.svg"
-						/></a>
-						<a
-							class="contrast-0 hover:contrast-100"
-							href="https://github.com/ThomasMott"
-							><img
-								class="soc-svg"
-								src="../static/images/github.svg"
-						/></a>
+				<div class="container nav-container">
+					<input class="checkbox" type="checkbox" name="" id="" />
+					<div class="hamburger-lines">
+						<span class="line line1"></span>
+						<span class="line line2"></span>
+						<span class="line line3"></span>
 					</div>
+					<div class="logo">
+						<a href="../" class="title">TM</a>
+					</div>
+					<ul class="menu-items m-auto pb-20">
+						<li><a href="../" class="title">TM</a></li>
+						<li><a href="../">home</a></li>
+						<li><a href="../about">about</a></li>
+						<li><a href=".">projects</a></li>
+						<li>
+							<a
+								href="mailto:ThomasNMott1997@gmail.com"
+								download=""
+								class="hover:underline text-slate-800"
+								>thomasnmott1997@gmail.com</a
+							>
+						</li>
+						<li>
+							<div class="pt-10 flex gap-2 justify-center">
+								<a
+									class="contrast-0 hover:contrast-100"
+									href="https://www.instagram.com/xtmto/"
+									><img
+										class="soc-svg"
+										src="../static/images/instagram.svg"
+								/></a>
+								<a
+									class="contrast-0 hover:contrast-100"
+									href="https://www.linkedin.com/in/thomas-mott-57348b150/"
+									><img
+										class="soc-svg"
+										src="../static/images/linked-in.svg"
+								/></a>
+								<a
+									class="contrast-0 hover:contrast-100"
+									href="https://github.com/ThomasMott"
+									><img
+										class="soc-svg"
+										src="../static/images/github.svg"
+								/></a>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</nav>
 		<section id="main" class="py-20 max-w-6xl m-auto">
-			<p class="text-gray-500">Live Website - 2022</p>
-			<h1 class="text-3xl mt-3 mb-6 font-semibold text-gray-700">
-				FoxGibbon
-			</h1>
-			<p class="my-6 text-gray-500">
-				TLDR:
-				<em
-					>I embarked on a creative journey and established
-					FoxGIbbon.com, a blog dedicated to sharing valuable UX and
-					UI design tips and information.</em
-				>
-			</p>
-			<div class="border-pink-100 border-4 rounded-lg p-10 mb-10">
+			<p class="text-slate-500">Live Website - 2022</p>
+			<h1 class="title mt-3 text-slate-800">FoxGibbon</h1>
+			<div class="flex items-center mb-6">
+				<h2>TLDR:</h2>
+				<p class="text-xl pl-4 my-6 text-slate-800">
+					<em
+						>Founded www.foxgibbon.com, a blog dedicated to sharing
+						valuable UX and UI design tips and information.</em
+					>
+				</p>
+			</div>
+			<div class="article p-10 mb-10">
 				<ul class="flex flex-wrap gap-4">
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						UX Design
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						UI Design
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						Prototyping
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						Illustration
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						Graphics
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						Branding
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						Adobe Suite
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						Adobe XD
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						Figma
 					</li>
 				</ul>
 			</div>
 		</section>
-		<section class="pb-20 max-w-4xl m-auto">
+		<section class="article px-10 py-6 mb-20 max-w-3xl m-auto">
 			<article>
-				<p class="text-gray-500 m-6">
+				<p class="text-slate-500 m-6">
 					In the dynamic world of UX and UI design, staying updated
 					with the latest trends, techniques, and best practices is
 					crucial. Recognizing this need, I embarked on a creative
@@ -160,10 +160,10 @@
 					outline how I crafted the logo and branding to establish a
 					strong visual identity for FoxGIbbon.com.
 				</p>
-				<h2 class="text-lg font-semibold text-gray-700 m-6">
+				<h2 class="text-slate-800 m-6">
 					Research: Laying the Foundation
 				</h2>
-				<p class="text-gray-500 m-6">
+				<p class="text-slate-500 m-6">
 					The first step in creating FoxGibbon.com was to conduct
 					research. This involved studying the latest industry trends,
 					analyzing popular design blogs, and understanding the target
@@ -171,26 +171,29 @@
 					gaps and areas where I could add value, I set the direction
 					for my blog.
 				</p>
-				<h2 class="text-lg font-semibold text-gray-700 m-6">
+				<h2 class="text-slate-800 m-6">
 					Logo and Branding: Establishing Visual Identity
 				</h2>
 				<figure class="my-6">
 					<img
-						class="h-80 mb-6 w-full object-cover rounded-xl"
+						class="h-80 w-full object-cover"
 						src="../static/images/fg/ideation.jpg"
 						alt="foxGibbon website"
 					/>
+					<figcaption class="text-slate-500 m-2">
+						Early sketches of FoxGibbon logo
+					</figcaption>
 					<img
-						class="border border-gray-200 w-full object-cover rounded-xl"
+						class="w-full object-cover"
 						src="../static/images/fg/logo-bw.png"
 						alt="foxGibbon website"
 						style="height: auto"
 					/>
-					<figcaption class="text-gray-400 m-2">
+					<figcaption class="text-slate-500 m-2">
 						FoxGibbon logo and branding process
 					</figcaption>
 				</figure>
-				<p class="text-gray-500 m-6">
+				<p class="text-slate-500 m-6">
 					Understanding the significance of visual identity in brand
 					establishment, I undertook the task of designing a unique
 					logo and branding. Through careful consideration of
@@ -200,10 +203,10 @@
 					across various touchpoints, including the website, social
 					media profiles, and promotional materials.
 				</p>
-				<h2 class="text-lg font-semibold text-gray-700 m-6">
+				<h2 class="text-slate-800 m-6">
 					Prototyping: Designing the User Experience
 				</h2>
-				<p class="text-gray-500 m-6">
+				<p class="text-slate-500 m-6">
 					With a clear vision in mind, I began prototyping the blog's
 					user experience. I focused on creating an intuitive and
 					visually appealing interface, ensuring easy navigation and
@@ -211,11 +214,11 @@
 					rapid prototyping techniques, I iteratively refined the
 					design to optimize user engagement.
 				</p>
-				<h2 class="text-lg font-semibold text-gray-700 m-6">
+				<h2 class="text-slate-800 m-6">
 					Analytics and AI Integration: Enhancing Content and
 					Engagement
 				</h2>
-				<p class="text-gray-500 m-6">
+				<p class="text-slate-500 m-6">
 					To continuously improve the quality of articles and engage
 					readers effectively, I integrated the use analytics and AI
 					technologies. By analyzing user behavior, such as page
@@ -225,10 +228,10 @@
 					I enhanced articles by incorporating relevant suggestions
 					and providing personalized recommendations to readers.
 				</p>
-				<h2 class="text-lg font-semibold text-gray-700 m-6">Outcome</h2>
+				<h2 class="text-slate-800 m-6">Outcome</h2>
 				<figure class="my-6">
 					<img
-						class="w-full object-cover rounded-xl"
+						class="w-full object-cover"
 						src="../static/images/fg/fg.png"
 						alt="FoxGibbon mobile"
 						style="height: auto"
@@ -237,7 +240,7 @@
 						FoxGibbon mobile
 					</figcaption>
 				</figure>
-				<p class="text-gray-500 m-6">
+				<p class="text-slate-500 m-6">
 					Creating FoxGibbon.com was a rewarding journey, driven by a
 					passion for UX and UI design. Through extensive research,
 					prototyping, and testing, I crafted a user-centric blog that
@@ -258,7 +261,7 @@
 				</p>
 				<figure class="my-6">
 					<img
-						class="w-full object-cover rounded-xl"
+						class="w-full object-cover"
 						src="../static/images/fg/web.png"
 						alt="FoxGibbon web"
 						style="height: auto"
@@ -275,8 +278,8 @@
 					class="flex flex-wrap justify-center items-center text-gray-400"
 				>
 					<li>
-						<a href="../" class="mr-4 hover:underline md:mr-6"
-							>Home</a
+						<a href="../" class="title mr-4 hover:underline md:mr-6"
+							>TM</a
 						>
 					</li>
 					<li>

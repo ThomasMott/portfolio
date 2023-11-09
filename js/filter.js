@@ -44,8 +44,11 @@ var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
 	btns[i].addEventListener("click", function () {
-		var current = document.getElementsByClassName("bg-white");
-		current[0].className = current[0].className.replace(" bg-white", "");
-		this.className += " bg-white";
+		var current = document.getElementsByClassName("bg-transparent");
+		current[0].className = current[0].className.replace(
+			" bg-transparent",
+			""
+		);
+		this.className += " bg-transparent";
 	});
 }

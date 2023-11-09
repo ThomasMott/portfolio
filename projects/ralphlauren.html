@@ -11,13 +11,14 @@
 			content="Assessment metrics for the Ralph Lauren website were conducted using expert review, satisfaction and performance assessments.Tests run on the site included:Heuristic analysis, Task Time, User Errors, User Efficiency (lostness), Thematic analysis, Biometrics (eye tracking), Think aloud & system usability scoring."
 		/>
 		<link rel="icon" href="../static/images/favicon.ico" />
+		<link rel="stylesheet" href="../css/style.css" />
 		<link
 			href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
 			rel="stylesheet"
 		/>
 		<script src="https://cdn.tailwindcss.com"></script>
 	</head>
-	<body class="mx-6">
+	<body class="mx-6 bg-rose-50">
 		<a
 			href="#main"
 			class="fixed opacity-0 top-0 left-0 focus:opacity-100"
@@ -26,137 +27,136 @@
 		>
 		<nav>
 			<div
-				class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4 border-pink-100 border-b-4"
+				class="navbar mx-auto max-w-screen-xl p-4 border-slate-800 border-b-4"
 			>
-				<ul
-					class="text-gray-500 flex flex-wrap justify-center items-center"
-				>
-					<li>
-						<a href="../" class="mr-4 hover:underline md:mr-6"
-							>Home</a
-						>
-					</li>
-					<li>
-						<a href="../about/" class="mr-4 hover:underline md:mr-6"
-							>About</a
-						>
-					</li>
-					<li>
-						<a href="./" class="mr-4 hover:underline md:mr-6"
-							>Projects</a
-						>
-					</li>
-				</ul>
-				<div class="flex items-center">
-					<a
-						href="mailto:ThomasNMott1997@gmail.com"
-						download=""
-						class="mr-6 text-sm hover:underline text-gray-500"
-						>thomasnmott1997@gmail.com</a
-					>
-					<div class="flex gap-2">
-						<a
-							class="contrast-0 hover:contrast-100"
-							href="https://www.instagram.com/xtmto/"
-							><img
-								class="soc-svg"
-								src="../static/images/instagram.svg"
-						/></a>
-						<a
-							class="contrast-0 hover:contrast-100"
-							href="https://www.linkedin.com/in/thomas-mott-57348b150/"
-							><img
-								class="soc-svg"
-								src="../static/images/linked-in.svg"
-						/></a>
-						<a
-							class="contrast-0 hover:contrast-100"
-							href="https://github.com/ThomasMott"
-							><img
-								class="soc-svg"
-								src="../static/images/github.svg"
-						/></a>
+				<div class="container nav-container">
+					<input class="checkbox" type="checkbox" name="" id="" />
+					<div class="hamburger-lines">
+						<span class="line line1"></span>
+						<span class="line line2"></span>
+						<span class="line line3"></span>
 					</div>
+					<div class="logo">
+						<a href="../" class="title">TM</a>
+					</div>
+					<ul class="menu-items m-auto pb-20">
+						<li><a href="../" class="title">TM</a></li>
+						<li><a href="../">home</a></li>
+						<li><a href="../about">about</a></li>
+						<li><a href=".">projects</a></li>
+						<li>
+							<a
+								href="mailto:ThomasNMott1997@gmail.com"
+								download=""
+								class="hover:underline text-slate-800"
+								>thomasnmott1997@gmail.com</a
+							>
+						</li>
+						<li>
+							<div class="pt-10 flex gap-2 justify-center">
+								<a
+									class="contrast-0 hover:contrast-100"
+									href="https://www.instagram.com/xtmto/"
+									><img
+										class="soc-svg"
+										src="../static/images/instagram.svg"
+								/></a>
+								<a
+									class="contrast-0 hover:contrast-100"
+									href="https://www.linkedin.com/in/thomas-mott-57348b150/"
+									><img
+										class="soc-svg"
+										src="../static/images/linked-in.svg"
+								/></a>
+								<a
+									class="contrast-0 hover:contrast-100"
+									href="https://github.com/ThomasMott"
+									><img
+										class="soc-svg"
+										src="../static/images/github.svg"
+								/></a>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</nav>
 		<section id="main" class="py-20 max-w-6xl m-auto">
-			<p class="text-gray-500">Website Performace Testing - 2020</p>
-			<h1 class="text-3xl mt-3 mb-6 font-semibold text-gray-700">
-				Ralph Lauren
-			</h1>
-			<p class="my-6 text-gray-500">
-				TLDR:
-				<em
-					>Assessment metrics for the Ralph Lauren website were
-					conducted using expert review, satisfaction and performance
-					assessments.Tests run on the site included: Heuristic
-					Analysis, Task Time, User Errors, User Efficiency (frequency
-					that users got lost), Thematic Analysis, Biometrics (eye
-					tracking) and Think Aloud Usability Scoring.</em
-				>
-			</p>
-			<div class="border-pink-100 border-4 rounded-lg p-10 mb-10">
+			<p class="text-slate-500">Website Performace Testing - 2020</p>
+			<h1 class="title mt-3 text-slate-800">Ralph Lauren</h1>
+			<div class="flex items-center mb-6">
+				<h2>TLDR:</h2>
+				<p class="text-xl pl-4 my-6 text-slate-800">
+					<em
+						>Assessment metrics for the Ralph Lauren website were
+						conducted using expert review, satisfaction and
+						performance assessments.Tests run on the site included:
+						Heuristic Analysis, Task Time, User Errors, User
+						Efficiency (frequency that users got lost), Thematic
+						Analysis, Biometrics (eye tracking) and Think Aloud
+						Usability Scoring.</em
+					>
+				</p>
+			</div>
+			<div class="article p-10 mb-10">
 				<ul class="flex flex-wrap gap-4">
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						UX Design
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						UI Design
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						Prototyping
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						Web performance & satisfaction testing
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						Accessibility Audits
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						Heuristic Analysis
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						Adobe Suite
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						Adobe XD
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						Figma
 					</li>
 					<li
-						class="border border-gray-500 text-gray-500 rounded-md px-4 py-2"
+						class="border-4 border-pink-200 text-slate-800 px-4 py-2"
 					>
 						User Interviews
 					</li>
 				</ul>
 			</div>
 		</section>
-		<section class="pb-20 max-w-4xl m-auto">
+		<section class="article px-10 py-6 mb-20 max-w-3xl m-auto">
 			<article>
-				<h2 class="text-lg font-semibold text-gray-700 m-6">
-					Approach
-				</h2>
-				<p class="text-gray-500 m-6">
+				<h2 class="text-slate-800 m-6">Approach</h2>
+				<p class="text-slate-500 m-6">
 					The design process followed the double diamond model. The
 					first step was to conduct thematic, heuristic, satisfaction
 					and performance related issues across the website. Issues
@@ -165,7 +165,7 @@
 				</p>
 				<figure class="my-6">
 					<img
-						class="border border-gray-200 w-full object-cover rounded-xl"
+						class="border border-gray-200 w-full object-cover"
 						src="../static/images/rl/rl-an.png"
 						alt="ralph lauren analysis"
 						style="height: auto"
@@ -176,7 +176,7 @@
 					</figcaption>
 				</figure>
 				<h2 class="sec-title">Goals</h2>
-				<p class="text-gray-500 m-6">
+				<p class="text-slate-500 m-6">
 					The main goal of the project, adding value to the Ralph
 					Lauren website was particularly challenging. The company has
 					a design team dedicated to improving sales and conversion
@@ -185,7 +185,7 @@
 				</p>
 				<figure class="my-6">
 					<img
-						class="w-full object-cover rounded-xl"
+						class="w-full object-cover"
 						src="../static/images/rl/rl-t.png"
 						alt="user interviews"
 						style="height: auto"
@@ -195,8 +195,8 @@
 						statistically significant results
 					</figcaption>
 				</figure>
-				<h2 class="text-lg font-semibold text-gray-700 m-6">Outcome</h2>
-				<p class="text-gray-500 m-6">
+				<h2 class="text-slate-800 m-6">Outcome</h2>
+				<p class="text-slate-500 m-6">
 					Testing showed that there was a statistically significant
 					decrease in SUS scores between the original website (w1) (M=
 					82.1.6, SD= 9.674) to the redesign (w2) (M= 89.1 SD=
@@ -205,22 +205,22 @@
 					(0.275) indicated a large effect size. A power of .90 was
 					achieved.
 				</p>
-				<p class="text-gray-500 m-6">
+				<p class="text-slate-500 m-6">
 					This means that the Ralph Lauren redesign is more ‘usable’
 					and satisfying than the original website.
 				</p>
-				<p class="text-gray-500 m-6">
+				<p class="text-slate-500 m-6">
 					We are 90% certain this answer is correct and unaffected by
 					chance.
 				</p>
 				<figure class="my-6">
 					<img
-						class="mb-6 h-full object-cover rounded-xl"
+						class="mb-6 h-full object-cover"
 						src="../static/images/rl/rl-e.png"
 						alt="ralph lauren wireframes"
 					/>
 					<img
-						class="w-full object-cover rounded-xl"
+						class="w-full object-cover"
 						src="../static/images/rl/rl.jpg"
 						alt="ralph lauren mock-up on laptop"
 						style="height: auto"
@@ -237,8 +237,8 @@
 					class="flex flex-wrap justify-center items-center text-gray-400"
 				>
 					<li>
-						<a href="../" class="mr-4 hover:underline md:mr-6"
-							>Home</a
+						<a href="../" class="title mr-4 hover:underline md:mr-6"
+							>TM</a
 						>
 					</li>
 					<li>

@@ -11,13 +11,43 @@
 			content="Welcome to my portfolio, Here are a few of my favourite projects that I have worked on. I use human-centred solutions to improve everyday experiences."
 		/>
 		<link rel="icon" href="../static/images/favicon.ico" />
+		<link rel="stylesheet" href="../css/style.css" />
 		<link
 			href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
 			rel="stylesheet"
 		/>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			// init controller
+			var controller = new ScrollMagic.Controller();
+		</script>
+		<style type="text/css">
+			#reveal2 {
+				opacity: 0;
+				-webkit-transform: rotate(20deg) scale(0.5);
+				-moz-transform: rotate(20deg) scale(0.5);
+				-ms-transform: rotate(20deg) scale(0.5);
+				-o-transform: rotate(20deg) scale(0.5);
+				transform: rotate(20deg) scale(0.5);
+				-webkit-transition: all 1.6s ease-in-out;
+				-moz-transition: all 1.6s ease-in-out;
+				-ms-transition: all 1.6s ease-in-out;
+				-o-transition: all 1.6s ease-in-out;
+				transition: all 1.6s ease-in-out;
+			}
+			#reveal2.visible {
+				opacity: 1;
+				-webkit-transform: none;
+				-moz-transform: none;
+				-ms-transform: none;
+				-o-transform: none;
+				transform: none;
+			}
+		</style>
 	</head>
-	<body class="mx-6">
+	<body class="mx-6 bg-rose-50">
 		<a
 			href="#main"
 			class="fixed opacity-0 top-0 left-0 focus:opacity-100"
@@ -26,111 +56,119 @@
 		>
 		<nav>
 			<div
-				class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4 border-pink-100 border-b-4"
+				class="navbar mx-auto max-w-screen-xl p-4 border-slate-800 border-b-4"
 			>
-				<ul
-					class="text-gray-500 flex flex-wrap justify-center items-center"
-				>
-					<li>
-						<a href="../" class="mr-4 hover:underline md:mr-6"
-							>Home</a
-						>
-					</li>
-					<li>
-						<a href="../about/" class="mr-4 hover:underline md:mr-6"
-							>About</a
-						>
-					</li>
-					<li>
-						<a href="./" class="mr-4 hover:underline md:mr-6"
-							>Projects</a
-						>
-					</li>
-				</ul>
-				<div class="flex items-center">
-					<a
-						href="mailto:ThomasNMott1997@gmail.com"
-						download=""
-						class="mr-6 text-sm hover:underline text-gray-500"
-						>thomasnmott1997@gmail.com</a
-					>
-					<div class="flex gap-2">
-						<a
-							class="contrast-0 hover:contrast-100"
-							href="https://www.instagram.com/xtmto/"
-							><img
-								class="soc-svg"
-								src="../static/images/instagram.svg"
-						/></a>
-						<a
-							class="contrast-0 hover:contrast-100"
-							href="https://www.linkedin.com/in/thomas-mott-57348b150/"
-							><img
-								class="soc-svg"
-								src="../static/images/linked-in.svg"
-						/></a>
-						<a
-							class="contrast-0 hover:contrast-100"
-							href="https://github.com/ThomasMott"
-							><img
-								class="soc-svg"
-								src="../static/images/github.svg"
-						/></a>
+				<div class="container nav-container">
+					<input class="checkbox" type="checkbox" name="" id="" />
+					<div class="hamburger-lines">
+						<span class="line line1"></span>
+						<span class="line line2"></span>
+						<span class="line line3"></span>
 					</div>
+					<div class="logo">
+						<a href="../" class="title">TM</a>
+					</div>
+					<ul class="menu-items m-auto pb-20">
+						<li><a href="../" class="title">TM</a></li>
+						<li><a href="../">home</a></li>
+						<li><a href="../about">about</a></li>
+						<li><a href=".">projects</a></li>
+						<li>
+							<a
+								href="mailto:ThomasNMott1997@gmail.com"
+								download=""
+								class="hover:underline text-slate-800"
+								>thomasnmott1997@gmail.com</a
+							>
+						</li>
+						<li>
+							<div class="pt-10 flex gap-2 justify-center">
+								<a
+									class="contrast-0 hover:contrast-100"
+									href="https://www.instagram.com/xtmto/"
+									><img
+										class="soc-svg"
+										src="../static/images/instagram.svg"
+								/></a>
+								<a
+									class="contrast-0 hover:contrast-100"
+									href="https://www.linkedin.com/in/thomas-mott-57348b150/"
+									><img
+										class="soc-svg"
+										src="../static/images/linked-in.svg"
+								/></a>
+								<a
+									class="contrast-0 hover:contrast-100"
+									href="https://github.com/ThomasMott"
+									><img
+										class="soc-svg"
+										src="../static/images/github.svg"
+								/></a>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</nav>
 		<section id="main" class="py-20 max-w-6xl m-auto">
 			<p class="text-sm pb-2 text-gray-400">Featured Projects</p>
-			<h1 class="text-2xl text-black pb-6">
-				Human-centred solutions to improve everyday experiences.
+			<h1 class="title text-slate-800 pb-10">
+				<span class="">Human-centred solutions</span>,</br> to
+				<span class="">improve</span> everyday experiences.
 			</h1>
-			<p class="pb-6 text-gray-500">
+			<p class="pb-6 text-slate-800">
 				Click the buttons below to filter by category.
 			</p>
 			<div id="myBtnContainer" class="flex flex-wrap gap-4 pb-20">
 				<button
-					class="btn bg-pink-100 py-2 px-4 rounded-md bg-white"
+					type="button"
+					class="btn bg-pink-200 py-2 px-4 border-4 border-pink-200 bg-transparent"
 					onclick="filterSelection('all')"
 				>
 					All projects
 				</button>
 				<button
-					class="btn bg-pink-100 py-2 px-4 rounded-md"
+					type="button"
+					class="btn bg-pink-200 border-4 border-pink-200 py-2 px-4"
 					onclick="filterSelection('ui')"
 				>
 					UI design
 				</button>
 				<button
-					class="btn bg-pink-100 py-2 px-4 rounded-md"
+					type="button"
+					class="btn bg-pink-200 border-4 border-pink-200 py-2 px-4"
 					onclick="filterSelection('ux')"
 				>
 					UX design
 				</button>
 				<button
-					class="btn bg-pink-100 py-2 px-4 rounded-md"
+					type="button"
+					class="btn bg-pink-200 border-4 border-pink-200 py-2 px-4"
 					onclick="filterSelection('de')"
 				>
 					Web development
 				</button>
 				<button
-					class="btn bg-pink-100 py-2 px-4 rounded-md"
+					type="button"
+					class="btn bg-pink-200 border-4 border-pink-200 py-2 px-4"
 					onclick="filterSelection('pd')"
 				>
 					Product design
 				</button>
 				<button
-					class="btn bg-pink-100 py-2 px-4 rounded-md"
+									type="button"
+					class="btn bg-pink-200 border-4 border-pink-200 py-2 px-4"
 					onclick="filterSelection('gd')"
 				>
 					Graphic design
 				</button>
 			</div>
+			<div id="trigger2" class="spacer s0"></div>
 			<div
-				class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 pb-20"
+				class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 pb-20 gap-6"
 			>
-				<div class="fd de ui ux gd">
-					<a href="./mojeek.html" title="Mojeek">
+				<div id="reveal2" class="fd de ui ux gd">
+					<a class="block" href="./mojeek.html" title="Mojeek">
 						<div
 							class="port-out"
 							data-tooltip="down"
@@ -138,7 +176,7 @@
 						>
 							<div class="port-img">
 								<img
-									class="opacity-80 h-80 object-cover w-full rounded-lg hover:scale-110 hover:opacity-100 duration-300"
+									class="opacity-80 h-80 object-cover w-full hover:scale-110 hover:opacity-100 hover:z-10 duration-300"
 									src="../static/images/mj/mj-1.jpg"
 									alt="mojeek website on laptop"
 								/>
@@ -146,16 +184,23 @@
 						</div>
 					</a>
 				</div>
-				<div class="fd de ui ux gd">
-					<a href="./foxgibbon.html" title="FoxGibbon">
+				<div
+					id="reveal2"
+					class="fd de ui ux gd xl:col-span-2 xl:row-span-2"
+				>
+					<a
+						class="block xl:h-full"
+						href="./foxgibbon.html"
+						title="FoxGibbon"
+					>
 						<div
-							class="port-out"
+							class="port-out xl:h-full"
 							data-tooltip="down"
 							aria-label="FoxGibbon"
 						>
-							<div class="port-img">
+							<div class="port-img h-full">
 								<img
-									class="opacity-80 h-80 object-cover w-full rounded-lg hover:scale-110 hover:opacity-100 duration-300"
+									class="opacity-80 h-80 xl:h-full object-cover w-full hover:scale-110 hover:opacity-100 duration-300"
 									src="../static/images/fg/fg.png"
 									alt="FoxGibbon website on iphone"
 								/>
@@ -163,41 +208,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="fd ui ux gd">
-					<a href="./smartsource.html" title="SmartSource">
-						<div
-							class="port-out"
-							data-tooltip="down"
-							aria-label="SmartSource"
-						>
-							<div class="port-img">
-								<img
-									class="opacity-80 h-80 object-cover w-full rounded-lg hover:scale-110 hover:opacity-100 duration-300"
-									src="../static/images/ss/ss.jpg"
-									alt="smart source app on mobile"
-								/>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="fd ui ux gd">
-					<a href="./petlet.html" title="Petlet">
-						<div
-							class="port-out"
-							data-tooltip="down"
-							aria-label="Petlet"
-						>
-							<div class="port-img">
-								<img
-									class="opacity-80 h-80 object-cover w-full rounded-lg hover:scale-110 hover:opacity-100 duration-300"
-									src="../static/images/pl/pl.jpg"
-									alt="petlet app on mobile"
-								/>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="fd ui ux">
+				<div id="reveal2" class="fd ui ux">
 					<a href="./ralphlauren.html" title="Ralph Lauren">
 						<div
 							class="port-out"
@@ -206,7 +217,7 @@
 						>
 							<div class="port-img">
 								<img
-									class="opacity-80 h-80 object-cover w-full rounded-lg hover:scale-110 hover:opacity-100 duration-300"
+									class="opacity-80 h-80 object-cover w-full hover:scale-110 hover:opacity-100 duration-300"
 									src="../static/images/rl/rl.jpg"
 									alt="ralph lauren website on website"
 								/>
@@ -214,7 +225,41 @@
 						</div>
 					</a>
 				</div>
-				<div class="fd de ui ux gd">
+				<div id="reveal2" class="fd ui ux gd xl:col-span-2">
+					<a href="./smartsource.html" title="SmartSource">
+						<div
+							class="port-out"
+							data-tooltip="down"
+							aria-label="SmartSource"
+						>
+							<div class="port-img">
+								<img
+									class="opacity-80 h-80 object-cover w-full hover:scale-110 hover:opacity-100 duration-300"
+									src="../static/images/ss/ss.jpg"
+									alt="smart source app on mobile"
+								/>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div id="reveal2" class="fd ui ux gd">
+					<a href="./petlet.html" title="Petlet">
+						<div
+							class="port-out"
+							data-tooltip="down"
+							aria-label="Petlet"
+						>
+							<div class="port-img">
+								<img
+									class="opacity-80 h-80 object-cover w-full hover:scale-110 hover:opacity-100 duration-300"
+									src="../static/images/pl/pl.jpg"
+									alt="petlet app on mobile"
+								/>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div id="reveal2" class="fd de ui ux gd">
 					<a href="./algopigm.html" title="Algopigm">
 						<div
 							class="port-out"
@@ -223,7 +268,7 @@
 						>
 							<div class="port-img">
 								<img
-									class="opacity-80 h-80 object-cover w-full rounded-lg hover:scale-110 hover:opacity-100 duration-300"
+									class="opacity-80 h-80 object-cover w-full hover:scale-110 hover:opacity-100 duration-300"
 									src="../static/images/ap/ap.jpg"
 									alt="algopigm website on laptop"
 								/>
@@ -231,24 +276,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="fd ux">
-					<a href="./genshare.html" title="GenShare">
-						<div
-							class="port-out"
-							data-tooltip="down"
-							aria-label="GenShare"
-						>
-							<div class="port-img">
-								<img
-									class="opacity-80 h-80 object-cover w-full rounded-lg hover:scale-110 hover:opacity-100 duration-300"
-									src="../static/images/sd/sd-cp.png"
-									alt="genshare"
-								/>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="fd gd">
+				<div id="reveal2" class="fd gd">
 					<a href="./cdm.html" title="Coalition of Digital Marketing">
 						<div
 							class="port-out"
@@ -257,7 +285,7 @@
 						>
 							<div class="port-img">
 								<img
-									class="opacity-80 h-80 object-cover w-full rounded-lg hover:scale-110 hover:opacity-100 duration-300"
+									class="opacity-80 h-80 object-cover w-full hover:scale-110 hover:opacity-100 duration-300"
 									src="../static/images/cd/cd-cp.jpg"
 									alt="cdm logo"
 								/>
@@ -265,7 +293,24 @@
 						</div>
 					</a>
 				</div>
-				<div class="fd ui ux gd">
+				<div id="reveal2" class="fd ux">
+					<a href="./genshare.html" title="GenShare">
+						<div
+							class="port-out"
+							data-tooltip="down"
+							aria-label="GenShare"
+						>
+							<div class="port-img">
+								<img
+									class="opacity-80 h-80 object-cover w-full hover:scale-110 hover:opacity-100 duration-300"
+									src="../static/images/sd/sd-cp.png"
+									alt="genshare"
+								/>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div id="reveal2" class="fd ui ux gd">
 					<a href="./recoll.html" title="Recoll">
 						<div
 							class="port-out"
@@ -274,7 +319,7 @@
 						>
 							<div class="port-img">
 								<img
-									class="opacity-80 h-80 object-cover w-full rounded-lg hover:scale-110 hover:opacity-100 duration-300"
+									class="opacity-80 h-80 object-cover w-full hover:scale-110 hover:opacity-100 duration-300"
 									src="../static/images/rc/rc.jpg"
 									alt="recoll app on mobile"
 								/>
@@ -282,7 +327,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="fd pd">
+				<div id="reveal2" class="fd pd">
 					<a href="./armourslice.html" title="ArmourSlice">
 						<div
 							class="port-out"
@@ -291,7 +336,7 @@
 						>
 							<div class="port-img">
 								<img
-									class="opacity-80 h-80 object-cover w-full rounded-lg hover:scale-110 hover:opacity-100 duration-300"
+									class="opacity-80 h-80 object-cover w-full hover:scale-110 hover:opacity-100 duration-300"
 									src="../static/images/as/as-2.jpg"
 									alt="exploded view of armour slice"
 								/>
@@ -299,7 +344,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="fd pd">
+				<div id="reveal2" class="fd pd">
 					<a href="./ripple.html" title="Ripple">
 						<div
 							class="port-out"
@@ -308,7 +353,7 @@
 						>
 							<div class="port-img">
 								<img
-									class="opacity-80 h-80 object-cover w-full rounded-lg hover:scale-110 hover:opacity-100 duration-300"
+									class="opacity-80 h-80 object-cover w-full hover:scale-110 hover:opacity-100 duration-300"
 									src="../static/images/rp/rp-2.jpg"
 									alt="exploded view of ripple"
 								/>
@@ -324,8 +369,8 @@
 					class="flex flex-wrap justify-center items-center text-gray-400"
 				>
 					<li>
-						<a href="../" class="mr-4 hover:underline md:mr-6"
-							>Home</a
+						<a href="../" class="title mr-4 hover:underline md:mr-6"
+							>TM</a
 						>
 					</li>
 					<li>
@@ -342,5 +387,16 @@
 			</div>
 		</footer>
 	</body>
+	<script>
+		// build scene
+		new ScrollMagic.Scene({
+			triggerElement: "#trigger2",
+			triggerHook: 0.9,
+			offset: 50, // move trigger to center of element
+			reverse: false, // only do once
+		})
+			.setClassToggle("#reveal2", "visible") // add class toggle
+			.addTo(controller);
+	</script>
 	<script src="../js/filter.js"></script>
 </html>
